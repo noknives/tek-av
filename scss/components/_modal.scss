@@ -1,0 +1,245 @@
+/* General styles for the modal */
+
+/* 
+Styles for the html/body for special modal where we want 3d effects
+Note that we need a container wrapping all content on the page for the 
+perspective effects (not including the modals and the overlay).
+*/
+
+.md-modal {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 75%;
+	max-width: 630px;
+	min-width: 350px;
+	height: auto;
+	z-index: 11000;
+	visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.md-show {
+	visibility: visible;
+}
+
+.md-overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	visibility: hidden;
+	top: 0;
+	left: 0;
+	z-index: 10000;
+	opacity: 0;
+	background: rgba(44,44,44,0.85);
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.md-show ~ .md-overlay {
+	opacity: 1;
+	visibility: visible;
+}
+
+/* Content styles */
+.md-content {
+	color: $charcoal;
+	background: $white;
+	position: relative;
+	border-radius: 3px;
+	margin: 0 auto;
+    padding: 50px 35px;
+}
+
+.md-effect-1 .md-content {
+	-webkit-transform: scale(0.7);
+	-moz-transform: scale(0.7);
+	-ms-transform: scale(0.7);
+	transform: scale(0.7);
+	opacity: 0;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.md-show.md-effect-1 .md-content {
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	opacity: 1;
+}
+
+/* Project Styles */ 
+
+.md-content h3, .md-content h4 {
+	margin: 0;
+    text-transform: none;
+    font-weight: 900;
+	text-align: center;
+    font-size: 1.5rem;
+    color: $text;
+}
+
+.md-content h4 {
+    letter-spacing: 0;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.md-content button {
+	display: block;
+	margin: 0 auto;
+	font-size: 0.8em;
+}
+
+.checkbox-input {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+input[type="checkbox"] {
+    -webkit-appearance: checkbox;
+    box-sizing: border-box;
+    margin: 0;
+    background-color: transparent;
+    -webkit-appearance: textfield;
+    height: 10px;
+    width: 10px;
+    border-radius: 3px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    background-color: white;
+    border: solid 1px $lightgrey;
+    display: inline-block;
+    outline: none;
+    position: relative;
+    &:after {
+        content: '';
+        position: absolute;
+        height: 4px;
+        width: 4px;
+        background-color: transparent;
+        top: 2px;
+        left: 2px;
+    }
+}
+
+input[type="checkbox"]:checked {
+    &:after {
+        background-color: rgba($charcoal,.5);
+    }
+}
+
+.checkbox-label {
+    display: inline-block;
+    font-size: .75rem;
+    letter-spacing: 0.2em;
+    color: $lightgrey;
+    font-weight: 700;
+    width: calc(100%-20px);
+    margin-left: 10px;
+}
+
+input[type="submit"] {
+    align-items: flex-start;
+    text-align: center;
+    cursor: default;
+    color: buttontext;
+    padding: 0;
+    border: solid 2px $red;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    background-color: transparent;
+    box-sizing: border-box;
+    font-size: .6875rem;
+    letter-spacing: 0.25em;
+    font-weight: 700;
+    z-index: 2;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    color: $red;
+    position: relative;
+    overflow: hidden;
+    margin: .75rem auto 0;
+    padding: 7px 0;
+    cursor: pointer;
+    outline: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    max-width: 327px;
+    display: block;
+    text-transform: uppercase;
+    outline: none;
+    &:hover {
+        color: $lightgrey;
+    }
+}
+
+input[type="button"], .md-close, .md-content button {
+    align-items: flex-start;
+    text-align: center;
+    cursor: pointer;
+    color: buttontext;
+    padding: 0;
+    display: block;
+    margin: 12px auto 0;
+    border: none;
+    background-color: transparent;
+    box-sizing: border-box;
+    font-size: .6875rem;
+    color: rgba($lightgrey, .9);
+    letter-spacing: 0.05em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: underline;
+    outline: none;
+    transition: all 200ms linear;
+    -webkit-transition: all 120ms linear;
+    &:hover {
+        color: $text;
+    }
+}
+
+
+.option-section {
+    width: 100%;
+    margin-top: 1.5rem;
+    padding: 1.25rem 0;
+    border-top: solid 1px rgba($lightgrey, .5);
+    position: relative;
+    &:after {
+        content: '';
+        background-color: $grey;
+        background-image: url(http://www.justaddsalt.ca/tek-av/images/tek-av-icon-before-white.png);
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        height: 25px;
+        width: 32px;
+        position: absolute;
+        top: -12px;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        z-index: 8;
+    }
+    }

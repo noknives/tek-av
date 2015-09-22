@@ -1,0 +1,173 @@
+// Navigation Styles 
+
+
+.hide-text {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 35px;
+    background-color: white;
+    z-index: 10;
+    // box-shadow: 0px 0px 10px rgba(0,0,0,.1);
+}
+
+.nav-btn,
+.nav-btn:link,
+.nav-btn:visited{
+	z-index: 9999;
+	display: block;
+    position: absolute;
+    right: 0;
+    top: -2.25rem;
+	height: 35px;
+	width: 35px;
+	background: $red url('../images/nav.png') no-repeat center center;
+	background-size: 16px; 
+	-webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+    text-indent: 2.8rem;
+    &:hover {
+        background-color: $grey;
+    }
+    
+}
+
+.nav ul li {
+    list-style-type: none;
+}
+
+.nav-contact a {
+    display: block;
+}
+
+.nav-contact-2 {
+    position: absolute;
+    top: -1.5rem;
+    right: 40px;
+    @media #{$media-l} {
+        top: -3.75rem;
+    }
+    li {
+        display: inline-block;
+        margin-left: 5px;
+    }
+}
+
+a.cta-btn-m {
+    display: none;
+    @media #{$media-m} {
+        display: inline-block;
+        position: absolute;
+        right: 235px;
+        top: -2.25rem;
+    }
+    @media #{$media-l} {
+        top: -4.25rem;
+    }
+}
+
+.small-logo {
+    position: absolute;
+    left: 2px;
+    width: 80px;
+    @media #{$media-m} {
+        width: 103px;
+    }
+}
+
+.nav-top .cta {
+    @media #{$media-m} {
+        display: none;
+    }
+}
+
+.nav-sm li {
+    display: inline-block;
+}
+
+.nav-btn:hover,
+.nav-btn:focus,
+.nav-btn:active{
+}
+
+.nav a, 
+.nav a:link,
+.nav a:visited{
+    text-decoration: none;
+    color: $lightgrey;
+}
+
+.nav a:hover,
+.nav a:focus,
+.nav a:active{
+}
+
+/* Toggle */
+
+.nav-top{
+	display: none;
+}
+
+.nav-top[data-state="expanded"]{
+	display: block;
+    background-color: $white;
+    padding: 9.25%;
+}
+
+@media #{$media-l} {
+		
+	.nav-btn,
+	.nav-btn:link,
+	.nav-btn:visited{
+		display: none;
+	}
+	
+	.nav-top{
+		display: inline-block;
+		position: absolute;
+        right: 140px;
+        top: -4rem;
+	}
+	
+	.nav ul li {
+		display: inline-block;	
+		margin: 0 auto;
+	}
+	
+	.nav a, 
+	.nav a:link,
+	.nav a:visited{
+		padding-left: 20px;
+	}
+    
+    .nav-contact {
+        display: none;
+    }
+    
+}
+
+@media only screen and (min-width: 50em) {
+	
+	.nav-top{
+		float: right;
+		padding-right: .25rem;
+	}
+	
+	.nav ul {
+		text-align: left;
+		float: right;
+        margin-right: 14.75rem;
+	}
+    
+}

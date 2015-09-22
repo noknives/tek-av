@@ -1,0 +1,3329 @@
+@-moz-viewport {
+  width: device-width;
+  scale: 1;
+}
+
+@-ms-viewport {
+  width: device-width;
+  scale: 1;
+}
+
+@-o-viewport {
+  width: device-width;
+  scale: 1;
+}
+
+@-webkit-viewport {
+  width: device-width;
+  scale: 1;
+}
+
+@viewport {
+  width: device-width;
+  scale: 1;
+}
+
+::selection {
+  background-color: black;
+  color: white;
+}
+
+html {
+  box-sizing: border-box;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  hyphens: none;
+  -webkit-hyphens: none;
+}
+
+*,
+*:after,
+*::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.flex-img {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.no-spacing {
+  margin: 0;
+}
+
+.push-top-1 {
+  display: block;
+  margin-top: 15px;
+}
+
+.push-top-2 {
+  display: block;
+  margin-top: 22.5px;
+}
+
+.push-top-3 {
+  display: block;
+  margin-top: 30px;
+}
+
+.grid {
+  margin: 0;
+  padding: 0;
+  letter-spacing: -0.31em;
+  text-rendering: optimizespeed;
+  display: -webkit-flex;
+  -webkit-flex-flow: row wrap;
+  display: -ms-flexbox;
+  -ms-flex-flow: row wrap;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.grid:before, .grid:after {
+  margin: 0;
+  padding: 0;
+}
+
+.grid-bottom {
+  -webkit-align-items: flex-end;
+  -ms-align-items: flex-end;
+  align-items: flex-end;
+}
+
+.grid-middle {
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+}
+
+.grid-stretch {
+  -webkit-align-items: stretch;
+  -ms-align-items: stretch;
+  align-items: stretch;
+}
+
+.opera-only :-o-prefocus, .grid {
+  word-spacing: -0.43em;
+}
+
+.unit {
+  letter-spacing: normal;
+  text-rendering: auto;
+  vertical-align: top;
+  word-spacing: normal;
+  display: inline-block;
+  visibility: visible;
+}
+
+.grid-bottom .unit {
+  vertical-align: bottom;
+}
+
+.grid-middle .unit {
+  vertical-align: middle;
+}
+
+[class*="unit-push-"],
+[class*="unit-pull-"] {
+  position: relative;
+}
+
+.unit-xs-hidden {
+  display: none;
+  visibility: hidden;
+}
+
+.unit-xs-centered {
+  margin: 0 auto;
+}
+
+.unit-xs-1, .xs-1 {
+  display: block;
+  visibility: visible;
+  width: 100%;
+}
+
+.unit-offset-xs-0 {
+  margin-left: 0;
+}
+
+.unit-push-xs-0,
+.unit-pull-xs-0 {
+  left: 0;
+}
+
+.unit-xs-1-2, .xs-1-2 {
+  width: 50.0000%;
+}
+
+.unit-offset-xs-1-2 {
+  margin-left: 50.0000%;
+}
+
+.unit-push-xs-1-2 {
+  left: 50.0000%;
+}
+
+.unit-pull-xs-1-2 {
+  left: -50.0000%;
+}
+
+.unit-xs-1-3, .xs-1-3 {
+  width: 33.3333%;
+}
+
+.unit-offset-xs-1-3 {
+  margin-left: 33.3333%;
+}
+
+.unit-push-xs-1-3 {
+  left: 33.3333%;
+}
+
+.unit-pull-xs-1-3 {
+  left: -33.3333%;
+}
+
+.unit-xs-2-3, .xs-2-3 {
+  width: 66.6667%;
+}
+
+.unit-offset-xs-2-3 {
+  margin-left: 66.6667%;
+}
+
+.unit-push-xs-2-3 {
+  left: 66.6667%;
+}
+
+.unit-pull-xs-2-3 {
+  left: -66.6667%;
+}
+
+.unit-xs-1-4, .xs-1-4 {
+  width: 25.0000%;
+}
+
+.unit-offset-xs-1-4 {
+  margin-left: 25.0000%;
+}
+
+.unit-push-xs-1-4 {
+  left: 25.0000%;
+}
+
+.unit-pull-xs-1-4 {
+  left: -25.0000%;
+}
+
+.unit-xs-3-4, .xs-3-4 {
+  width: 75.0000%;
+}
+
+.unit-offset-xs-3-4 {
+  margin-left: 75.0000%;
+}
+
+.unit-push-xs-3-4 {
+  left: 75.0000%;
+}
+
+.unit-pull-xs-3-4 {
+  left: -75.0000%;
+}
+
+.unit-xs-1-2, .xs-1-2, .unit-xs-1-3, .xs-1-3, .unit-xs-2-3, .xs-2-3, .unit-xs-1-4, .xs-1-4, .unit-xs-3-4, .xs-3-4 {
+  display: inline-block;
+  visibility: visible;
+}
+
+@media only screen and (min-width: 25em) {
+  .unit-s-hidden {
+    display: none;
+    visibility: hidden;
+  }
+  .unit-s-centered {
+    margin: 0 auto;
+  }
+  .unit-s-1, .s-1 {
+    display: block;
+    visibility: visible;
+    width: 100%;
+  }
+  .unit-offset-s-0 {
+    margin-left: 0;
+  }
+  .unit-push-s-0,
+  .unit-pull-s-0 {
+    left: 0;
+  }
+  .unit-s-1-2, .s-1-2 {
+    width: 50.0000%;
+  }
+  .unit-offset-s-1-2 {
+    margin-left: 50.0000%;
+  }
+  .unit-push-s-1-2 {
+    left: 50.0000%;
+  }
+  .unit-pull-s-1-2 {
+    left: -50.0000%;
+  }
+  .unit-s-1-3, .s-1-3 {
+    width: 33.3333%;
+  }
+  .unit-offset-s-1-3 {
+    margin-left: 33.3333%;
+  }
+  .unit-push-s-1-3 {
+    left: 33.3333%;
+  }
+  .unit-pull-s-1-3 {
+    left: -33.3333%;
+  }
+  .unit-s-2-3, .s-2-3 {
+    width: 66.6667%;
+  }
+  .unit-offset-s-2-3 {
+    margin-left: 66.6667%;
+  }
+  .unit-push-s-2-3 {
+    left: 66.6667%;
+  }
+  .unit-pull-s-2-3 {
+    left: -66.6667%;
+  }
+  .unit-s-1-4, .s-1-4 {
+    width: 25.0000%;
+  }
+  .unit-offset-s-1-4 {
+    margin-left: 25.0000%;
+  }
+  .unit-push-s-1-4 {
+    left: 25.0000%;
+  }
+  .unit-pull-s-1-4 {
+    left: -25.0000%;
+  }
+  .unit-s-3-4, .s-3-4 {
+    width: 75.0000%;
+  }
+  .unit-offset-s-3-4 {
+    margin-left: 75.0000%;
+  }
+  .unit-push-s-3-4 {
+    left: 75.0000%;
+  }
+  .unit-pull-s-3-4 {
+    left: -75.0000%;
+  }
+  .unit-s-1-2, .s-1-2, .unit-s-1-3, .s-1-3, .unit-s-2-3, .s-2-3, .unit-s-1-4, .s-1-4, .unit-s-3-4, .s-3-4 {
+    display: inline-block;
+    visibility: visible;
+  }
+}
+
+@media only screen and (min-width: 38em) {
+  .unit-m-hidden {
+    display: none;
+    visibility: hidden;
+  }
+  .unit-m-centered {
+    margin: 0 auto;
+  }
+  .unit-m-1, .m-1 {
+    display: block;
+    visibility: visible;
+    width: 100%;
+  }
+  .unit-offset-m-0 {
+    margin-left: 0;
+  }
+  .unit-push-m-0,
+  .unit-pull-m-0 {
+    left: 0;
+  }
+  .unit-m-1-2, .m-1-2 {
+    width: 50.0000%;
+  }
+  .unit-offset-m-1-2 {
+    margin-left: 50.0000%;
+  }
+  .unit-push-m-1-2 {
+    left: 50.0000%;
+  }
+  .unit-pull-m-1-2 {
+    left: -50.0000%;
+  }
+  .unit-m-1-3, .m-1-3 {
+    width: 33.3333%;
+  }
+  .unit-offset-m-1-3 {
+    margin-left: 33.3333%;
+  }
+  .unit-push-m-1-3 {
+    left: 33.3333%;
+  }
+  .unit-pull-m-1-3 {
+    left: -33.3333%;
+  }
+  .unit-m-2-3, .m-2-3 {
+    width: 66.6667%;
+  }
+  .unit-offset-m-2-3 {
+    margin-left: 66.6667%;
+  }
+  .unit-push-m-2-3 {
+    left: 66.6667%;
+  }
+  .unit-pull-m-2-3 {
+    left: -66.6667%;
+  }
+  .unit-m-1-4, .m-1-4 {
+    width: 25.0000%;
+  }
+  .unit-offset-m-1-4 {
+    margin-left: 25.0000%;
+  }
+  .unit-push-m-1-4 {
+    left: 25.0000%;
+  }
+  .unit-pull-m-1-4 {
+    left: -25.0000%;
+  }
+  .unit-m-3-4, .m-3-4 {
+    width: 75.0000%;
+  }
+  .unit-offset-m-3-4 {
+    margin-left: 75.0000%;
+  }
+  .unit-push-m-3-4 {
+    left: 75.0000%;
+  }
+  .unit-pull-m-3-4 {
+    left: -75.0000%;
+  }
+  .unit-m-1-2, .m-1-2, .unit-m-1-3, .m-1-3, .unit-m-2-3, .m-2-3, .unit-m-1-4, .m-1-4, .unit-m-3-4, .m-3-4 {
+    display: inline-block;
+    visibility: visible;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+  .unit-l-hidden {
+    display: none;
+    visibility: hidden;
+  }
+  .unit-l-centered {
+    margin: 0 auto;
+  }
+  .unit-l-1, .l-1 {
+    display: block;
+    visibility: visible;
+    width: 100%;
+  }
+  .unit-offset-l-0 {
+    margin-left: 0;
+  }
+  .unit-push-l-0,
+  .unit-pull-l-0 {
+    left: 0;
+  }
+  .unit-l-1-2, .l-1-2 {
+    width: 50.0000%;
+  }
+  .unit-offset-l-1-2 {
+    margin-left: 50.0000%;
+  }
+  .unit-push-l-1-2 {
+    left: 50.0000%;
+  }
+  .unit-pull-l-1-2 {
+    left: -50.0000%;
+  }
+  .unit-l-1-3, .l-1-3 {
+    width: 33.3333%;
+  }
+  .unit-offset-l-1-3 {
+    margin-left: 33.3333%;
+  }
+  .unit-push-l-1-3 {
+    left: 33.3333%;
+  }
+  .unit-pull-l-1-3 {
+    left: -33.3333%;
+  }
+  .unit-l-2-3, .l-2-3 {
+    width: 66.6667%;
+  }
+  .unit-offset-l-2-3 {
+    margin-left: 66.6667%;
+  }
+  .unit-push-l-2-3 {
+    left: 66.6667%;
+  }
+  .unit-pull-l-2-3 {
+    left: -66.6667%;
+  }
+  .unit-l-1-4, .l-1-4 {
+    width: 25.0000%;
+  }
+  .unit-offset-l-1-4 {
+    margin-left: 25.0000%;
+  }
+  .unit-push-l-1-4 {
+    left: 25.0000%;
+  }
+  .unit-pull-l-1-4 {
+    left: -25.0000%;
+  }
+  .unit-l-3-4, .l-3-4 {
+    width: 75.0000%;
+  }
+  .unit-offset-l-3-4 {
+    margin-left: 75.0000%;
+  }
+  .unit-push-l-3-4 {
+    left: 75.0000%;
+  }
+  .unit-pull-l-3-4 {
+    left: -75.0000%;
+  }
+  .unit-l-1-2, .l-1-2, .unit-l-1-3, .l-1-3, .unit-l-2-3, .l-2-3, .unit-l-1-4, .l-1-4, .unit-l-3-4, .l-3-4 {
+    display: inline-block;
+    visibility: visible;
+  }
+}
+
+.unit-content-distribute {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.content-fill {
+  -ms-flex-grow: 2;
+  -webkit-flex-grow: 2;
+  flex-grow: 2;
+  max-width: 100%;
+  /* @bugfix: IE 10, 11 */
+}
+
+.content-shrink {
+  -ms-align-self: center;
+  -webkit-align-self: center;
+  align-self: center;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  height: auto;
+  min-height: inherit;
+}
+
+@media only screen and (min-width: 38em) {
+  section {
+    min-height: 700px;
+  }
+}
+
+section aside {
+  height: 100%;
+  margin: auto;
+  display: -ms-flexbox;
+  display: -webkit-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-align-items: center;
+}
+
+section aside.media {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  width: 100%;
+  height: 500px;
+  position: relative;
+  background-color: transparent;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+@media only screen and (min-width: 38em) {
+  section aside.media {
+    height: auto;
+    width: 50%;
+    position: absolute;
+    vertical-align: middle;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+    bottom: 0;
+  }
+}
+
+section aside.content {
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+  padding: 2rem;
+}
+
+@media only screen and (min-width: 38em) {
+  section aside.content {
+    width: 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+section aside.content div ul {
+  margin-left: 1.1em;
+}
+
+@media only screen and (min-width: 38em) {
+  section.flip-layout aside.media {
+    left: 50%;
+    top: 0;
+    bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 38em) {
+  section.flip-layout aside.content {
+    right: 50%;
+    top: 0;
+    bottom: 0;
+  }
+}
+
+.carousel-wrapper {
+  position: relative;
+  min-height: 1350px;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
+
+@media only screen and (min-width: 20em) {
+  .carousel-wrapper {
+    min-height: 1180px;
+  }
+}
+
+@media only screen and (min-width: 25em) {
+  .carousel-wrapper {
+    min-height: 1100px;
+  }
+}
+
+@media only screen and (min-width: 38em) {
+  .carousel-wrapper {
+    min-height: 700px;
+  }
+}
+
+.carousel-item {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.arrow {
+  position: absolute;
+  top: 2rem;
+  font-size: .625rem;
+  color: #fff;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.arrow:hover {
+  color: #c1836d;
+}
+
+.arrow-right {
+  right: 2rem;
+}
+
+.arrow-left {
+  left: 2rem;
+}
+
+[id^="target-item"] {
+  display: none;
+}
+
+.item-1 {
+  z-index: 2;
+  opacity: 1;
+}
+
+*:target ~ .item-1 {
+  opacity: 0;
+}
+
+#target-item-1:target ~ .item-1 {
+  opacity: 1;
+}
+
+#target-item-2:target ~ .item-2,
+#target-item-3:target ~ .item-3,
+#target-item-4:target ~ .item-4,
+#target-item-5:target ~ .item-5,
+#target-item-6:target ~ .item-6,
+#target-item-7:target ~ .item-7,
+#target-item-8:target ~ .item-8,
+#target-item-9:target ~ .item-9,
+#target-item-10:target ~ .item-10,
+#target-item-11:target ~ .item-11 {
+  z-index: 3;
+  opacity: 1;
+}
+
+.slider {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.holder {
+  width: 300%;
+  height: 100%;
+}
+
+/*.slide>.caption {
+    position: absolute;
+    bottom: 0rem;
+    left: 1rem;
+    color: white;
+    font-style: italic;
+    width: 70%;
+}*/
+.slide {
+  float: left;
+  width: 33.333333%;
+  height: 100%;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#testimonials .slide {
+  width: 100%;
+}
+
+.slide:after,
+.slide > .caption {
+  position: absolute;
+  color: #fff;
+  bottom: 1.75rem;
+  left: 2rem;
+  width: 100%;
+  text-align: left;
+  width: 70%;
+  max-width: 450px;
+}
+
+.slide:after {
+  content: '';
+  z-index: 7;
+}
+
+.slider-nav {
+  text-align: center;
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  display: block;
+  z-index: 7;
+}
+
+.slider-nav a {
+  width: 10px;
+  height: 10px;
+  display: block;
+  border: solid 1px white;
+  overflow: hidden;
+  text-indent: -9999px;
+  border-radius: 3px;
+  margin: 8px 0 0;
+  padding: 2px;
+  position: relative;
+}
+
+#testimonials .slider-nav a {
+  border: solid 1px #b4b4b4;
+  margin: 0 4px;
+}
+
+.slider-nav-test a {
+  display: inline-block;
+  margin: 0 0 0;
+}
+
+.slider-nav a.active:after {
+  content: '';
+  position: absolute;
+  height: 4px;
+  width: 4px;
+  background-color: #6a6a6a;
+  top: 2px;
+  left: 2px;
+}
+
+.three-col div {
+  width: 97.5%;
+  margin: 0 auto 2rem;
+  padding: 0;
+}
+
+@media only screen and (min-width: 45em) {
+  .three-col {
+    display: -ms-flexbox;
+    display: -webkit-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -webkit-flex-flow: row;
+    flex-flow: row;
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+  .three-col div {
+    display: -ms-flexbox;
+    display: -webkit-flexbox;
+    display: -webkit-box;
+    display: flex;
+    width: 100%;
+    -webkit-flex-flow: column;
+    flex-flow: column;
+    align-items: center;
+    margin-bottom: 0;
+  }
+  .three-col div:nth-child(2) {
+    margin: 0;
+  }
+}
+
+.flip-container {
+  padding: 0;
+  width: 86%;
+  max-width: 106rem;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 70em) {
+  .flip-container {
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    display: -ms-flexbox;
+    display: -webkit-flexbox;
+    display: -webkit-box;
+    display: flex;
+  }
+}
+
+.flipper {
+  width: 95%;
+  margin: 0;
+  margin-bottom: 1rem;
+  position: relative;
+  display: block;
+}
+
+@media only screen and (min-width: 60em) {
+  .flipper {
+    margin-bottom: 0;
+  }
+}
+
+.flipper .front-content {
+  display: block;
+  padding-bottom: 2rem;
+}
+
+.flipper h2 {
+  margin-top: 16rem;
+}
+
+@media only screen and (min-width: 25em) {
+  .flipper h2 {
+    margin-top: 20rem;
+  }
+}
+
+@media only screen and (min-width: 40em) {
+  .flipper h2 {
+    margin-top: 4rem;
+  }
+}
+
+@media only screen and (min-width: 70em) {
+  .flipper h2 {
+    margin-top: 21rem;
+  }
+}
+
+@media only screen and (min-width: 40em) {
+  .flipper .flipper-content {
+    width: 70%;
+    max-width: 20rem;
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 50em) {
+  .flipper .flipper-content {
+    max-width: 30rem;
+  }
+}
+
+@media only screen and (min-width: 50em) {
+  .flipper .flipper-content {
+    max-width: 25rem;
+  }
+}
+
+@media only screen and (min-width: 64em) {
+  .flipper .flipper-content {
+    max-width: 35rem;
+  }
+}
+
+@media only screen and (min-width: 70em) {
+  .flipper {
+    display: -ms-flexbox;
+    display: -webkit-flexbox;
+    display: -webkit-box;
+    display: flex;
+    width: 33.333%;
+  }
+  .flipper .flipper-content {
+    width: 100%;
+    display: block;
+  }
+  .flipper:first-child {
+    padding-right: 5px;
+  }
+  .flipper:nth-child(2) {
+    padding: 0 5px;
+  }
+  .flipper:nth-child(3) {
+    padding-left: 5px;
+  }
+}
+
+table, td {
+  border: none;
+  border-collapse: collapse;
+}
+
+table {
+  width: 100%;
+}
+
+.two-split td {
+  display: block;
+  width: 100%;
+  vertical-align: top;
+}
+
+@media only screen and (min-width: 38em) {
+  .two-split td {
+    display: table-cell;
+  }
+  .two-split td.left {
+    width: 45%;
+    text-align: right;
+  }
+  .two-split td.right {
+    width: 55%;
+    text-align: left;
+    padding-left: 2rem;
+  }
+}
+
+.flipper {
+  -webkit-transition: -webkit-transform 800ms cubic-bezier(0.33, 0.28, 0.18, 0.99);
+  -moz-transition: -moz-transform 800ms cubic-bezier(0.33, 0.28, 0.18, 0.99);
+  -ms-transition: -ms-transform 800ms cubic-bezier(0.33, 0.28, 0.18, 0.99);
+  -o-transition: -o-transform 800ms cubic-bezier(0.33, 0.28, 0.18, 0.99);
+  transition: transform 800ms cubic-bezier(0.33, 0.28, 0.18, 0.99);
+  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  -o-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+}
+
+.flipped {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.front {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background-color: #b4b4b4;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  -o-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+}
+
+.back {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background-color: #b4b4b4;
+  position: absolute;
+  top: 0;
+  left: 5px;
+  right: 5px;
+  bottom: 0;
+  cursor: auto;
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.see-less {
+  cursor: pointer;
+}
+
+#testimonials {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  background-color: grey;
+}
+
+#testimonials .slider {
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+
+#testimonials .slider-nav {
+  text-align: center;
+  position: absolute;
+  bottom: 7.75rem;
+  right: 0;
+  left: 0;
+}
+
+.md-content section {
+  height: auto;
+  min-height: 1px;
+}
+
+@media only screen and (min-width: 38em) {
+  .md-content section {
+    min-height: 1px;
+  }
+}
+
+@media only screen and (min-width: 38em) {
+  input.checkbox {
+    display: inline-block;
+  }
+}
+
+.mini-cards {
+  margin-top: 2rem;
+  list-style-type: none;
+}
+
+.mini-cards li {
+  background-color: transparent;
+  text-align: left;
+  position: relative;
+  display: inline-block;
+  height: 4rem;
+  width: 8.75rem;
+  margin: 0 0.25em 0.25em;
+}
+
+@media only screen and (min-width: 25em) {
+  .mini-cards li {
+    width: 10rem;
+    margin: 0 0.625em 0.625em;
+  }
+}
+
+.mini-cards li img {
+  height: 25px;
+  width: 25px;
+  top: 18px;
+  left: 10px;
+  bottom: 0;
+  position: absolute;
+}
+
+@media only screen and (min-width: 35em) {
+  .mini-cards li img {
+    left: 8px;
+    top: 17px;
+    height: 30px;
+    width: 30px;
+  }
+}
+
+@media only screen and (min-width: 25em) {
+  .mini-cards li img {
+    height: 40px;
+    width: 40px;
+    top: 12px;
+    bottom: 0;
+    left: 12px;
+  }
+}
+
+.mini-cards li h5 {
+  position: absolute;
+  color: #2c2c2c;
+  left: 45px;
+  padding-right: .5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+}
+
+@media only screen and (min-width: 25em) {
+  .mini-cards li h5 {
+    left: 63px;
+  }
+}
+
+.contact-blurb a, .copyright a {
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.contact-blurb a:hover, .copyright a:hover {
+  color: #b4b4b4;
+}
+
+.hide-text {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 35px;
+  background-color: white;
+  z-index: 10;
+}
+
+.nav-btn,
+.nav-btn:link,
+.nav-btn:visited {
+  z-index: 9999;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: -2.25rem;
+  height: 35px;
+  width: 35px;
+  background: #c1836d url("../images/nav.png") no-repeat center center;
+  background-size: 16px;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  text-indent: 2.8rem;
+}
+
+.nav-btn:hover,
+.nav-btn:link:hover,
+.nav-btn:visited:hover {
+  background-color: #f4f4f4;
+}
+
+.nav ul li {
+  list-style-type: none;
+}
+
+.nav-contact a {
+  display: block;
+}
+
+.nav-contact-2 {
+  position: absolute;
+  top: -1.5rem;
+  right: 40px;
+}
+
+@media only screen and (min-width: 60em) {
+  .nav-contact-2 {
+    top: -3.75rem;
+  }
+}
+
+.nav-contact-2 li {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+a.cta-btn-m {
+  display: none;
+}
+
+@media only screen and (min-width: 38em) {
+  a.cta-btn-m {
+    display: inline-block;
+    position: absolute;
+    right: 235px;
+    top: -2.25rem;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+  a.cta-btn-m {
+    top: -4.25rem;
+  }
+}
+
+.small-logo {
+  position: absolute;
+  left: 2px;
+  width: 80px;
+}
+
+@media only screen and (min-width: 38em) {
+  .small-logo {
+    width: 103px;
+  }
+}
+
+@media only screen and (min-width: 38em) {
+  .nav-top .cta {
+    display: none;
+  }
+}
+
+.nav-sm li {
+  display: inline-block;
+}
+
+.nav a,
+.nav a:link,
+.nav a:visited {
+  text-decoration: none;
+  color: #b4b4b4;
+}
+
+/* Toggle */
+.nav-top {
+  display: none;
+}
+
+.nav-top[data-state="expanded"] {
+  display: block;
+  background-color: #fff;
+  padding: 9.25%;
+}
+
+@media only screen and (min-width: 60em) {
+  .nav-btn,
+  .nav-btn:link,
+  .nav-btn:visited {
+    display: none;
+  }
+  .nav-top {
+    display: inline-block;
+    position: absolute;
+    right: 140px;
+    top: -4rem;
+  }
+  .nav ul li {
+    display: inline-block;
+    margin: 0 auto;
+  }
+  .nav a,
+  .nav a:link,
+  .nav a:visited {
+    padding-left: 20px;
+  }
+  .nav-contact {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 50em) {
+  .nav-top {
+    float: right;
+    padding-right: .25rem;
+  }
+  .nav ul {
+    text-align: left;
+    float: right;
+    margin-right: 14.75rem;
+  }
+}
+
+html {
+  font-size: 1em;
+}
+
+body {
+  background-color: white;
+  font-family: 'eurostile', sans-serif;
+  font-weight: 400;
+  line-height: 1.45;
+  color: #4e4e4e;
+  font-size: 90%;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern";
+  -webkit-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern=1";
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+}
+
+p {
+  margin-bottom: 1.3em;
+}
+
+.small-p {
+  font-size: .75rem;
+  letter-spacing: 0.225em;
+  color: #4e4e4e;
+}
+
+h1, h2, h3, h4 {
+  margin: 1.414em 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+h1, .uno {
+  margin-top: 0;
+  font-size: 3.375em;
+}
+
+h2, .dos {
+  font-size: 1.999em;
+  font-weight: 900;
+  font-size: 2.25rem;
+  line-height: .666666667;
+}
+
+h3, .tres {
+  font-size: 1.999em;
+}
+
+h4, .cuatro {
+  font-size: 1.414em;
+}
+
+small, .font_small {
+  font-size: 0.707em;
+}
+
+a {
+  color: #2c2c2c;
+}
+
+.no-margin-top {
+  margin-top: 0px;
+}
+
+.no-m-b {
+  margin-bottom: 0px;
+}
+
+.no-list {
+  list-style-type: none;
+}
+
+@media only screen and (min-width: 38em) {
+  .inline-block li {
+    display: inline-block;
+    margin: 0 5px;
+  }
+}
+
+.regular {
+  font-weight: 400;
+}
+
+.medium {
+  font-weight: 500;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.black {
+  font-weight: 900;
+}
+
+.btn {
+  font-size: 0.95em;
+  font-weight: 600;
+  z-index: 2;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  color: #c1836d;
+  background-color: #2c2c2c;
+  position: relative;
+  overflow: hidden;
+  margin: 0px;
+  padding: 10px 14px;
+  cursor: pointer;
+  outline: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  /*&:after {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        width: 101%;
+        height: 0;
+        top: 50%;
+        left: 50%;
+        background: $color;
+        opacity: 0;
+        
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -ms-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+        
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+    }*/
+}
+
+.btn:hover {
+  color: #fff;
+}
+
+.btn:active {
+  color: #fff;
+}
+
+.btn:hover:after {
+  height: 111%;
+  opacity: 1;
+}
+
+.btn:active:after {
+  height: 110%;
+  opacity: 1;
+}
+
+.cta-btn {
+  font-size: 0.95em;
+  font-weight: 600;
+  z-index: 2;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  color: #c1836d;
+  background-color: #2c2c2c;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 10px 14px;
+  cursor: pointer;
+  outline: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  /*&:after {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        width: 101%;
+        height: 0;
+        top: 50%;
+        left: 50%;
+        background: $color;
+        opacity: 0;
+        
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -ms-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+        
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+    }*/
+}
+
+.cta-btn:hover {
+  color: #fff;
+}
+
+.cta-btn:active {
+  color: #fff;
+}
+
+.cta-btn:hover:after {
+  height: 111%;
+  opacity: 1;
+}
+
+.cta-btn:active:after {
+  height: 110%;
+  opacity: 1;
+}
+
+.cta-btn-sm {
+  margin: 15px 0 0;
+}
+
+.cta-btn-m {
+  margin: 0;
+  display: none;
+}
+
+@media only screen and (min-width: 38em) {
+  .cta-btn-m {
+    display: inline-block;
+  }
+}
+
+.cta-btn-m {
+  padding: 5px 10px;
+  margin-top: 2px;
+}
+
+footer {
+  position: relative;
+}
+
+.btt {
+  font-size: 0.95em;
+  font-weight: 600;
+  z-index: 2;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  color: #c1836d;
+  background-color: #2c2c2c;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 10px 14px;
+  cursor: pointer;
+  outline: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  /*&:after {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        width: 101%;
+        height: 0;
+        top: 50%;
+        left: 50%;
+        background: $color;
+        opacity: 0;
+        
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -ms-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+        
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+    }*/
+  width: 40px;
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  background: #2c2c2c url(http://justaddsalt.ca/tek-av/images/slider-arrow.png) 50% 50%/20px no-repeat;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  display: block;
+}
+
+.btt:hover {
+  color: #fff;
+}
+
+.btt:active {
+  color: #fff;
+}
+
+.btt:hover:after {
+  height: 111%;
+  opacity: 1;
+}
+
+.btt:active:after {
+  height: 110%;
+  opacity: 1;
+}
+
+.btt:after {
+  content: 'TOP';
+  position: absolute;
+  color: #2c2c2c;
+  top: -80px;
+}
+
+/* General styles for the modal */
+/* 
+Styles for the html/body for special modal where we want 3d effects
+Note that we need a container wrapping all content on the page for the 
+perspective effects (not including the modals and the overlay).
+*/
+.md-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 75%;
+  max-width: 630px;
+  min-width: 350px;
+  height: auto;
+  z-index: 11000;
+  visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.md-show {
+  visibility: visible;
+}
+
+.md-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  opacity: 0;
+  background: rgba(44, 44, 44, 0.85);
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.md-show ~ .md-overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Content styles */
+.md-content {
+  color: #2c2c2c;
+  background: #fff;
+  position: relative;
+  border-radius: 3px;
+  margin: 0 auto;
+  padding: 50px 35px;
+}
+
+.md-effect-1 .md-content {
+  -webkit-transform: scale(0.7);
+  -moz-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.md-show.md-effect-1 .md-content {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* Project Styles */
+.md-content h3, .md-content h4 {
+  margin: 0;
+  text-transform: none;
+  font-weight: 900;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #4e4e4e;
+}
+
+.md-content h4 {
+  letter-spacing: 0;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.md-content button {
+  display: block;
+  margin: 0 auto;
+  font-size: 0.8em;
+}
+
+.checkbox-input {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: checkbox;
+  box-sizing: border-box;
+  margin: 0;
+  background-color: transparent;
+  -webkit-appearance: textfield;
+  height: 10px;
+  width: 10px;
+  border-radius: 3px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  background-color: white;
+  border: solid 1px #b4b4b4;
+  display: inline-block;
+  outline: none;
+  position: relative;
+}
+
+input[type="checkbox"]:after {
+  content: '';
+  position: absolute;
+  height: 4px;
+  width: 4px;
+  background-color: transparent;
+  top: 2px;
+  left: 2px;
+}
+
+input[type="checkbox"]:checked:after {
+  background-color: rgba(44, 44, 44, 0.5);
+}
+
+.checkbox-label {
+  display: inline-block;
+  font-size: .75rem;
+  letter-spacing: 0.2em;
+  color: #b4b4b4;
+  font-weight: 700;
+  width: calc(100%-20px);
+  margin-left: 10px;
+}
+
+input[type="submit"] {
+  align-items: flex-start;
+  text-align: center;
+  cursor: default;
+  color: buttontext;
+  padding: 0;
+  border: solid 2px #c1836d;
+  border-image-source: initial;
+  border-image-slice: initial;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+  background-color: transparent;
+  box-sizing: border-box;
+  font-size: .6875rem;
+  letter-spacing: 0.25em;
+  font-weight: 700;
+  z-index: 2;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  color: #c1836d;
+  position: relative;
+  overflow: hidden;
+  margin: .75rem auto 0;
+  padding: 7px 0;
+  cursor: pointer;
+  outline: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  max-width: 327px;
+  display: block;
+  text-transform: uppercase;
+  outline: none;
+}
+
+input[type="submit"]:hover {
+  color: #b4b4b4;
+}
+
+input[type="button"], .md-close, .md-content button {
+  align-items: flex-start;
+  text-align: center;
+  cursor: pointer;
+  color: buttontext;
+  padding: 0;
+  display: block;
+  margin: 12px auto 0;
+  border: none;
+  background-color: transparent;
+  box-sizing: border-box;
+  font-size: .6875rem;
+  color: rgba(180, 180, 180, 0.9);
+  letter-spacing: 0.05em;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: underline;
+  outline: none;
+  transition: all 200ms linear;
+  -webkit-transition: all 120ms linear;
+}
+
+input[type="button"]:hover, .md-close:hover, .md-content button:hover {
+  color: #4e4e4e;
+}
+
+.option-section {
+  width: 100%;
+  margin-top: 1.5rem;
+  padding: 1.25rem 0;
+  border-top: solid 1px rgba(180, 180, 180, 0.5);
+  position: relative;
+}
+
+.option-section:after {
+  content: '';
+  background-color: #f4f4f4;
+  background-image: url(http://www.justaddsalt.ca/tek-av/images/tek-av-icon-before-white.png);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 25px;
+  width: 32px;
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: 8;
+}
+
+form {
+  padding-top: 30px;
+}
+
+button, input {
+  line-height: normal;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+.input {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  margin-bottom: 15px;
+  width: 100%;
+  vertical-align: middle;
+  height: 35px;
+  overflow: hidden;
+}
+
+.input__field {
+  display: block;
+  border: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 5px;
+  color: #4e4e4e;
+  -webkit-appearance: none;
+  /* for box shadows to show on iOS */
+  width: 100%;
+  padding-left: 13px;
+  background-color: transparent;
+  border: 2px solid rgba(180, 180, 180, 0.8);
+  -webkit-transition: background-color 0.25s, border-color 0.25s;
+  transition: background-color 0.25s, border-color 0.25s;
+}
+
+.input__field:focus {
+  outline: none;
+}
+
+.input__label {
+  color: #b4b4b4;
+  font-weight: 700;
+  font-size: .72rem;
+  letter-spacing: 0.2em;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-align: left;
+  pointer-events: none;
+  overflow: hidden;
+  -webkit-transform: translate3d(0, 3em, 0);
+  transform: translate3d(0, 3em, 0);
+  -webkit-transition: -webkit-transform 0.25s;
+  transition: transform 0.25s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+
+.input__label-content {
+  display: block;
+  width: 100%;
+  color: #b4b4b4;
+  padding: 5px 0;
+  -webkit-transition: -webkit-transform 0.25s;
+  transition: transform 0.25s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  position: relative;
+  top: 4px;
+  left: 15px;
+}
+
+.input__label-content--yoshiko::after {
+  content: attr(data-content);
+  position: absolute;
+  font-weight: 700;
+  bottom: 100%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  color: #b4b4b4;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.5rem;
+  padding: 7px 0px 0;
+  opacity: .25;
+}
+
+.input__field--yoshiko:focus + .input__label--yoshiko,
+.input--filled .input__label--yoshiko {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.input__field--yoshiko:focus + .input__label--yoshiko .input__label-content--yoshiko,
+.input--filled .input__label-content--yoshiko {
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0);
+}
+
+.input__field--yoshiko:focus + .input__field--yoshiko,
+.input--filled .input__field--yoshiko {
+  background-color: transparent;
+  border-color: #c1836d;
+}
+
+.line-btn {
+  display: inline-block;
+  border: solid 2px #fff;
+  letter-spacing: 0.1em;
+  background-color: transparent;
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1;
+  padding: 0.4rem 0.65rem 0.375rem;
+  border-radius: 5px;
+}
+
+.h4-kerned {
+  font-size: 1rem;
+  line-height: 2;
+  color: #b4b4b4;
+  letter-spacing: 0.3em;
+  margin-top: 0;
+  font-weight: 700;
+}
+
+header {
+  margin: 0 auto;
+  z-index: 9999;
+  height: 35px;
+  margin-top: 0px;
+  width: 100%;
+  background-color: transparent;
+  padding-top: 4.5rem;
+}
+
+@media only screen and (min-width: 38em) {
+  header {
+    padding-top: 7rem;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+  header {
+    padding-top: 11.25rem;
+  }
+}
+
+header .max-width {
+  width: 86%;
+  border-bottom: solid 1px #d9d9d9;
+  position: relative;
+  margin: -1px auto 0;
+  max-width: 106rem;
+}
+
+header .small-logo {
+  left: 0;
+  bottom: 10px;
+  width: 70px;
+  top: -1.55rem;
+}
+
+@media only screen and (min-width: 38em) {
+  header .small-logo {
+    top: -1.95rem;
+    bottom: 8px;
+    width: 100px;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+  header .small-logo {
+    top: -3.85rem;
+    bottom: 41px;
+  }
+}
+
+header .nav-contact-2 {
+  bottom: .925rem;
+  right: 40px;
+  font-size: .6875rem;
+}
+
+@media only screen and (min-width: 38em) {
+  header .nav-contact-2 {
+    bottom: 20px;
+    right: 47px;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+  header .nav-contact-2 {
+    right: 0px;
+    bottom: 43px;
+  }
+}
+
+header .nav-contact-2 li a {
+  color: #b4b4b4;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+header .nav-contact-2 li a:hover {
+  color: #c1836d;
+}
+
+header .nav-contact-2 li {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+@media only screen and (min-width: 60em) {
+  header .nav-contact-2 li {
+    margin-left: 34px;
+  }
+}
+
+header .nav-btn,
+header .nav-btn:link,
+header .nav-btn:visited {
+  bottom: .75rem;
+  right: 0;
+  height: 30px;
+  width: 30px;
+  border: solid 2px #c1836d;
+  border-radius: 5px;
+  background: transparent url("http://www.justaddsalt.ca/tek-av/images/nav.png") no-repeat center center;
+  background-size: 13px;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  text-indent: 9999px;
+}
+
+@media only screen and (min-width: 38em) {
+  header .nav-btn,
+  header .nav-btn:link,
+  header .nav-btn:visited {
+    bottom: 17px;
+  }
+}
+
+header .cta-btn-m,
+header .cta-btn-m:link,
+header .cta-btn-m:visited,
+header .cta-btn-sm,
+header .cta-btn-sm:link,
+header .cta-btn-sm:visited {
+  font-size: .6875rem;
+  border-color: #c1836d;
+}
+
+header .cta-btn-m:active,
+header .cta-btn-m:hover {
+  color: #b4b4b4;
+}
+
+header .cta-btn-sm,
+header .cta-btn-sm:link,
+header .cta-btn-sm:visited {
+  font-size: .6875rem;
+  color: #c1836d;
+}
+
+.nav a,
+.nav a:link,
+.nav a:visited {
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.nav a:hover,
+.nav a:link:hover,
+.nav a:visited:hover {
+  color: #c1836d;
+}
+
+.scroll-header {
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  background-color: white;
+  padding-top: 3.5rem;
+}
+
+@media only screen and (min-width: 38em) {
+  .scroll-header {
+    padding-top: 4rem;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+  .scroll-header {
+    padding-top: 6.5rem;
+  }
+}
+
+.scroll-header .max-width {
+  border-bottom: none;
+}
+
+#intro {
+  z-index: 9;
+  background-color: transparent;
+  padding: 7%;
+  padding-top: calc(6.25rem + 5%);
+  position: relative;
+}
+
+@media only screen and (min-width: 38em) {
+  #intro {
+    padding: calc(50px + 7.25rem) 7% 5%;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+  #intro {
+    padding: calc(50px + 12rem) 7% 15rem;
+    background-image: url(http://www.justaddsalt.ca/tek-av/images/intrp-box.jpg);
+    background-size: 1000px;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+  }
+}
+
+@media only screen and (min-width: 120em) {
+  #intro {
+    background-position: 75% -29.5rem;
+    background-size: 1500px;
+  }
+}
+
+#intro h1 {
+  letter-spacing: 0.01em;
+  line-height: 1.333333333;
+  font-size: 1.75em;
+}
+
+@media only screen and (min-width: 25em) {
+  #intro h1 {
+    font-size: 2.25em;
+  }
+}
+
+@media only screen and (min-width: 38em) {
+  #intro h1 {
+    font-size: 3.375em;
+  }
+}
+
+#intro h1 .tek-av {
+  display: none;
+}
+
+@media only screen and (min-width: 38em) {
+  #intro h1 .tek-av {
+    display: inline-block;
+  }
+}
+
+#intro h1 .tagline {
+  letter-spacing: 0.275em;
+  color: #b4b4b4;
+}
+
+#intro h1 .done-right {
+  letter-spacing: 0.275em;
+  color: #c1836d;
+}
+
+#about-intro aside.media {
+  background-image: url(http://www.placehold.it/700x700/c1c1c1);
+  background-size: cover;
+}
+
+.max-width {
+  max-width: 106rem;
+  margin: 0 auto;
+}
+
+#about-us {
+  z-index: 2;
+  padding: 7.75rem 7%;
+  position: relative;
+  background-color: #2c2c2c;
+  color: #fff;
+}
+
+@media only screen and (min-width: 60em) {
+  #about-us {
+    margin-top: -10.31rem;
+    padding: calc(7.75rem + 2rem) 7%;
+    overflow: auto;
+  }
+}
+
+#about-us h2 {
+  text-transform: none;
+  line-height: 1;
+  color: #fff;
+  font-size: 2.25rem;
+  padding-top: 30px;
+  display: inline-block;
+  letter-spacing: 0.0025em;
+  margin-top: -6px;
+}
+
+@media only screen and (min-width: 60em) {
+  #about-us h2 {
+    position: absolute;
+    top: 0;
+    left: calc(-14% - 3.2rem);
+  }
+}
+
+@media only screen and (min-width: 93.75em) {
+  #about-us h2 {
+    left: calc(-8% - 3.2rem);
+  }
+}
+
+#about-us .floater {
+  position: relative;
+  padding: 1rem;
+}
+
+@media only screen and (min-width: 60em) {
+  #about-us .floater {
+    display: block;
+    width: 86%;
+    margin: 0 auto;
+    margin-left: 14%;
+    overflow: visible;
+    padding-right: 4rem;
+  }
+}
+
+@media only screen and (min-width: 93.75em) {
+  #about-us .floater {
+    width: 92%;
+    margin-left: 8%;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+  #about-us .p-holder {
+    position: relative;
+    border-top: 1px solid #c1836d;
+    display: block;
+    padding: 2rem 0 5rem 20%;
+  }
+}
+
+@media only screen and (min-width: 93.75em) {
+  #about-us .p-holder {
+    max-width: 75rem;
+    padding: 2rem 0 5rem 30%;
+  }
+}
+
+#about-us p {
+  padding-bottom: 2rem;
+}
+
+#about-us .local-service, #about-us .dream-setup, #about-us .crafted {
+  padding-top: calc(7% + 20px);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#about-us .local-service {
+  background-image: url(http://www.justaddsalt.ca/tek-av/images/local-service-1.jpg);
+  margin-top: 30px;
+}
+
+#about-us .local-service h2 {
+  border-top: 6px solid #c1836d;
+}
+
+#about-us .local-service p {
+  border-bottom: 1px solid #c1836d;
+}
+
+#about-us .local-service .p-holder {
+  border-top: 1px solid #c1836d;
+}
+
+#about-us .dream-setup {
+  margin-top: 60px;
+  background-image: url(http://www.justaddsalt.ca/tek-av/images/dream-setup.jpg);
+}
+
+#about-us .dream-setup h2 {
+  border-top: 6px solid #edd267;
+}
+
+#about-us .dream-setup p {
+  border-bottom: 1px solid #edd267;
+}
+
+#about-us .dream-setup .p-holder {
+  border-top: 1px solid #edd267;
+}
+
+#about-us .crafted {
+  margin-top: 60px;
+  background-image: url(http://www.justaddsalt.ca/tek-av/images/crafted.jpg);
+}
+
+#about-us .crafted h2 {
+  border-top: 6px solid #85a4d8;
+}
+
+#about-us .crafted p {
+  border-bottom: 1px solid #85a4d8;
+}
+
+#about-us .crafted .p-holder {
+  border-top: 1px solid #85a4d8;
+}
+
+#about-us p {
+  letter-spacing: 0.3em;
+  font-weight: 500;
+  line-height: 2;
+  font-size: .75rem;
+  color: #b4b4b4;
+}
+
+#i-1, #i-2, #i-3 {
+  background-color: #b4b4b4;
+}
+
+.slide-0 {
+  background-image: url(http://www.justaddsalt.ca/tek-av/images/placeholder1.jpg);
+}
+
+.slide-1 {
+  background-image: url("http://placehold.it/1400x1400/333333/ffffff");
+}
+
+.slide-2 {
+  background-image: url("http://placehold.it/1400x1400/555555/ffffff");
+}
+
+#services {
+  text-align: center;
+  padding: 7.75rem 0 0;
+  background-color: #fff;
+}
+
+#services h1 {
+  font-weight: 700;
+  color: #b4b4b4;
+  font-size: 1rem;
+  letter-spacing: 0.3em;
+  margin-top: 0;
+  line-height: 1;
+  padding-left: 7%;
+  padding-right: 7%;
+  margin-bottom: 3.875rem;
+}
+
+#services .flipper {
+  position: relative;
+  text-align: left;
+}
+
+#services .flipper .front {
+  background-position: top;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+#services .flipper .front h2 {
+  color: #fff;
+  line-height: .1;
+  color: #fff;
+  letter-spacing: 0.025em;
+}
+
+#services .flipper .front .number, #services .flipper .front .slogan {
+  color: #fff;
+  font-weight: 700;
+}
+
+#services .flipper .front .slogan {
+  letter-spacing: 0.2em;
+  margin-bottom: 2rem;
+}
+
+#services .flipper .front .small-p {
+  margin-bottom: 2.65rem;
+}
+
+#services .flipper .back {
+  padding: 1.5rem;
+}
+
+#services .flipper .back ul {
+  overflow: hidden;
+}
+
+#services .flipper .back .custom-quote-btn {
+  display: block;
+  width: 100%;
+  text-align: center;
+  border-radius: 5px;
+  border: solid 2px #fff;
+  text-decoration: none;
+  font-size: .6875rem;
+  letter-spacing: 0.3em;
+  color: #fff;
+  font-weight: 700;
+  padding: .35rem 0;
+  max-width: 22rem;
+  margin: -8px auto 0;
+  background-color: transparent;
+  text-transform: uppercase;
+}
+
+#services .flipper .back .custom-quote-btn:hover {
+  color: #4e4e4e;
+}
+
+#services .flipper .back .sell-item {
+  list-style-type: none;
+  border-top: 1px solid rgba(78, 78, 78, 0.25);
+  margin: 0;
+  padding: 0;
+  margin-top: 1.5rem;
+}
+
+@media only screen and (min-width: 40em) {
+  #services .flipper .back .sell-item {
+    width: 31.5%;
+    margin: 1.5rem 5px 0;
+    float: left;
+    border-bottom: 1px solid rgba(78, 78, 78, 0.25);
+  }
+}
+
+@media only screen and (min-width: 70em) {
+  #services .flipper .back .sell-item {
+    width: 100%;
+    border-bottom: none;
+  }
+}
+
+#services .flipper .back .sell-item:last-child {
+  border-bottom: 1px solid rgba(78, 78, 78, 0.25);
+  margin-bottom: 1.5rem;
+}
+
+#services .flipper .back .sell-item h3 {
+  font-weight: 900;
+  font-size: 2.25rem;
+  letter-spacing: 0.02em;
+  display: inline-block;
+  padding-top: .9rem;
+  color: #fff;
+  margin: 0;
+  margin-top: -4px;
+  border-top: 4px solid #4e4e4e;
+}
+
+#services .flipper .back .sell-item div {
+  font-size: 1rem;
+  letter-spacing: 0.2em;
+  line-height: 1;
+  margin: 0;
+  color: #fff;
+  font-weight: 700;
+}
+
+#services .flipper .back .sell-item div .font_small {
+  color: #4e4e4e;
+  font-weight: 500;
+  margin-top: 1.0385rem;
+  margin-bottom: 1.75rem;
+}
+
+#services .flipper .flip-btn {
+  display: block;
+  width: 100%;
+  border-top: 1px solid rgba(78, 78, 78, 0.25);
+  padding: 0;
+  position: relative;
+}
+
+#services .flipper .flip-btn:after {
+  content: '';
+  position: absolute;
+  background-image: url(http://www.justaddsalt.ca/tek-av/images/arrow.png);
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 0;
+  right: 0;
+  top: 1.3rem;
+  height: 14px;
+  width: 16px;
+  text-align: right;
+  color: white;
+}
+
+#services .flipper .flip-btn a {
+  display: inline-block;
+  border-top: solid 4px #4e4e4e;
+  font-size: .75rem;
+  font-weight: 900;
+  color: #fff;
+  margin-top: -4px;
+  padding: 1.3rem 0 0;
+}
+
+#services .flipper .flip-btn, #services .flipper .see-less {
+  display: block;
+  width: auto;
+  position: absolute;
+  bottom: 1.25rem;
+  left: 1.5rem;
+  right: 1.5rem;
+}
+
+#services .flipper .see-less:after {
+  -webkit-transform: rotateY(180deg);
+}
+
+#services .flipper #front-1 {
+  background-color: #c1836d;
+  background-image: url(http://www.justaddsalt.ca/tek-av/images/audio-box.jpg);
+  background-size: 456px;
+  background-position: right 1.75rem;
+}
+
+@media only screen and (min-width: 25em) {
+  #services .flipper #front-1 {
+    background-size: 656px;
+    background-position: right 1.75rem;
+  }
+}
+
+@media only screen and (min-width: 40em) {
+  #services .flipper #front-1 {
+    background-image: url(http://www.justaddsalt.ca/tek-av/images/audio-box-ng.jpg);
+    background-size: 256px;
+    background-position: right 1.75rem;
+  }
+}
+
+@media only screen and (min-width: 70em) {
+  #services .flipper #front-1 {
+    background-image: url(http://www.justaddsalt.ca/tek-av/images/audio-box.jpg);
+    background-size: 656px;
+    background-position: right 1.75rem;
+  }
+}
+
+#services .flipper #front-2 {
+  background-color: #edd267;
+  background-image: url(http://www.justaddsalt.ca/tek-av/images/video-box.jpg);
+  background-size: 456px;
+  background-position: right 1.75rem;
+}
+
+@media only screen and (min-width: 25em) {
+  #services .flipper #front-2 {
+    background-size: 656px;
+    background-position: right 1.75rem;
+  }
+}
+
+@media only screen and (min-width: 40em) {
+  #services .flipper #front-2 {
+    background-image: url(http://www.justaddsalt.ca/tek-av/images/video-box-ng.jpg);
+    background-size: 256px;
+    background-position: right 1.75rem;
+  }
+}
+
+@media only screen and (min-width: 70em) {
+  #services .flipper #front-2 {
+    background-image: url(http://www.justaddsalt.ca/tek-av/images/video-box.jpg);
+    background-size: 656px;
+    background-position: right 1.75rem;
+  }
+}
+
+#services .flipper #front-3 {
+  background-color: #85a4d8;
+  background-image: url(http://www.justaddsalt.ca/tek-av/images/network-box.jpg);
+  background-size: 456px;
+  background-position: right 1.75rem;
+}
+
+@media only screen and (min-width: 25em) {
+  #services .flipper #front-3 {
+    background-size: 656px;
+    background-position: right 2.75rem;
+  }
+}
+
+@media only screen and (min-width: 40em) {
+  #services .flipper #front-3 {
+    background-image: url(http://www.justaddsalt.ca/tek-av/images/network-box-ng.jpg);
+    background-size: 250px;
+    background-position: right 1.75rem;
+  }
+}
+
+@media only screen and (min-width: 70em) {
+  #services .flipper #front-3 {
+    background-image: url(http://www.justaddsalt.ca/tek-av/images/network-box.jpg);
+    background-size: 656px;
+    background-position: right 1.75rem;
+  }
+}
+
+#services .flipper #back-1 {
+  background-color: #c1836d;
+}
+
+#services .flipper #back-2 {
+  background-color: #edd267;
+}
+
+#services .flipper #back-3 {
+  background-color: #85a4d8;
+}
+
+#services .you-name-it {
+  width: 86%;
+  margin: 3.5rem auto 0;
+  padding-bottom: 2.25rem;
+  color: #b4b4b4;
+  letter-spacing: 0.3em;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 2;
+  border-top: 1px solid #b4b4b4;
+  border-bottom: 1px solid #b4b4b4;
+}
+
+#services .you-name-it .black {
+  display: inline-block;
+  color: #4e4e4e;
+  border-top: 3px solid #4e4e4e;
+  margin-top: -3px;
+  padding-top: calc(2rem + 4px);
+}
+
+#services .you-name-it .we-can {
+  max-width: 28.625rem;
+  margin: 0 auto;
+}
+
+#services .you-name-it p {
+  margin: 0;
+}
+
+#services .mini-cards {
+  width: 96%;
+  padding-top: 3rem;
+  text-align: center;
+  margin-bottom: 7.25rem;
+}
+
+@media only screen and (min-width: 35em) {
+  #services .mini-cards {
+    width: 86%;
+  }
+}
+
+#services .mini-cards h5 {
+  font-size: .5rem;
+  font-weight: 700;
+  line-height: 1.333333333;
+  color: #4e4e4e;
+  letter-spacing: 0.3em;
+}
+
+@media only screen and (min-width: 25em) {
+  #services .mini-cards h5 {
+    font-size: .75rem;
+  }
+}
+
+#services .possibilities {
+  background-image: url(http://www.justaddsalt.ca/tek-av/images/endless-possibilities.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 7.75rem 0;
+  width: 100%;
+  overflow: auto;
+}
+
+#services .possibilities .split {
+  width: 90%;
+  max-width: 56.375rem;
+  margin: 0 auto;
+  display: block;
+  border-top: 1px solid rgba(193, 131, 109, 0.5);
+}
+
+@media only screen and (min-width: 60em) {
+  #services .possibilities .split {
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+  #services .possibilities .split .left {
+    width: 35%;
+    display: inline-block;
+    float: left;
+  }
+}
+
+#services .possibilities .split .left h2 {
+  text-transform: none;
+  font-size: 2.25rem;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  border-top: 6px solid #c1836d;
+  display: inline-block;
+  padding-top: 1.75rem;
+  color: white;
+  margin-top: -6px;
+}
+
+@media only screen and (min-width: 60em) {
+  #services .possibilities .split .left h2 {
+    text-align: left;
+  }
+}
+
+#services .possibilities .split ul {
+  border-bottom: 1px solid rgba(193, 131, 109, 0.5);
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 60em) {
+  #services .possibilities .split ul {
+    width: 65%;
+    display: inline-block;
+    float: left;
+    padding-left: .95rem;
+  }
+}
+
+#services .possibilities .split ul li {
+  font-size: .75rem;
+  line-height: 1.333;
+  margin-top: 1.333rem;
+  color: #b4b4b4;
+  font-weight: 500;
+  letter-spacing: 0.3em;
+  list-style-type: none;
+}
+
+#services .possibilities .split ul li:first-child {
+  margin-top: 1.95rem;
+}
+
+#services .possibilities .split ul li:last-child {
+  margin-bottom: 1.8rem;
+}
+
+@media only screen and (min-width: 60em) {
+  #services .possibilities .split ul li {
+    list-style-type: square;
+    text-align: left;
+    padding-left: .25rem;
+  }
+}
+
+#services .logos {
+  background-color: #2c2c2c;
+  background-image: url(http://www.justaddsalt.ca/tek-av/images/tekav-pattern.png);
+  background-size: 30px;
+  padding: 7.25rem 0;
+}
+
+#services .logos ul {
+  width: 95%;
+  max-width: 56.375rem;
+  margin: 3rem auto 0;
+}
+
+#services .logos ul li {
+  display: inline-block;
+  margin: 15px 13px;
+}
+
+@media only screen and (min-width: 38em) {
+  #services .logos ul li {
+    margin: 20px 26px;
+  }
+}
+
+#services .logos ul li img {
+  height: 13px;
+}
+
+@media only screen and (min-width: 38em) {
+  #services .logos ul li img {
+    height: 21px;
+  }
+}
+
+#our-work {
+  text-align: center;
+  padding: 7.75rem 7%;
+}
+
+#our-work h1 {
+  margin-top: 0;
+  margin-bottom: 2.75rem;
+}
+
+#our-work .caption {
+  font-size: .75rem;
+  line-height: 1.333333333;
+  font-weight: 700;
+  text-transform: none;
+}
+
+#our-work .caption .cap-title {
+  text-transform: uppercase;
+}
+
+#our-work .content {
+  background-color: #2c2c2c;
+  color: #b4b4b4;
+  text-transform: none;
+  text-align: left;
+}
+
+#our-work .content .numbering {
+  position: absolute;
+  top: 2rem;
+  font-size: .625rem;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+}
+
+#our-work .content:after {
+  content: '';
+  background-size: contain;
+  background-color: transparent;
+  background-image: url(http://www.justaddsalt.ca/tek-av/images/tek-av-icon-red.png);
+  height: 25px;
+  width: 27px;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+}
+
+#our-work .content h3, #our-work .content h4 {
+  font-weight: 900;
+  color: #fff;
+}
+
+#our-work .content div {
+  border-top: solid 1px rgba(193, 131, 109, 0.5);
+  border-bottom: solid 1px rgba(193, 131, 109, 0.5);
+  padding: 0;
+  padding-bottom: 1.5rem;
+}
+
+#our-work .content h3 {
+  display: inline-block;
+  margin: 0;
+  margin-top: -4px;
+  margin-bottom: .9rem;
+  border-top: solid 4px #c1836d;
+  padding-top: 1rem;
+}
+
+#our-work .content h4 {
+  font-size: 1rem;
+}
+
+#our-work .content p, #our-work .content li, #our-work .content a {
+  font-size: .875rem;
+  line-height: 1.4;
+  letter-spacing: 0.04em;
+  font-weight: 500;
+}
+
+#our-work .content ul {
+  list-style-type: square;
+}
+
+#our-work .project-yellow .content div, #our-work .project-yellow .content h3 {
+  border-color: #edd267;
+}
+
+#our-work .project-blue .content div, #our-work .project-blue .content h3 {
+  border-color: #85a4d8;
+}
+
+#our-work .project-yellow .content:after {
+  background-image: url(http://www.justaddsalt.ca/tek-av/images/tek-av-icon-yellow.png);
+}
+
+#our-work .project-blue .content:after {
+  background-image: url(http://www.justaddsalt.ca/tek-av/images/tek-av-icon-blue.png);
+}
+
+section.flip-layout aside.content .numbering {
+  top: 2rem;
+  right: 2rem;
+}
+
+#testimonials {
+  background-color: #f4f4f4;
+  padding: 7.75rem 7%;
+  color: #4e4e4e;
+}
+
+#testimonials h4 {
+  color: #b4b4b4;
+  letter-spacing: 0.3em;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 2;
+}
+
+#testimonials h4 .black {
+  color: #4e4e4e;
+  font-weight: 900;
+}
+
+#testimonials .testimonial-text {
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin: 2rem auto 3rem;
+  padding: 2rem 0;
+  z-index: 1;
+  text-transform: none;
+  max-width: 56.25rem;
+  border-top: solid 1px rgba(180, 180, 180, 0.5);
+  border-bottom: solid 1px rgba(180, 180, 180, 0.5);
+  position: relative;
+}
+
+#testimonials .testimonial-text:after {
+  content: '';
+  background-color: #f4f4f4;
+  background-image: url(http://www.justaddsalt.ca/tek-av/images/tek-av-icon-before.png);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 25px;
+  width: 32px;
+  position: absolute;
+  top: -12px;
+  z-index: 8;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+#testimonials .author {
+  letter-spacing: 0.3em;
+  line-height: 2;
+  font-size: .75rem;
+}
+
+#testimonials .author .name {
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+  border-top: solid 4px #4e4e4e;
+  margin-top: 0;
+  padding-top: 1.75rem;
+}
+
+#testimonials .author .company {
+  color: #b4b4b4;
+  font-weight: 500;
+  padding-bottom: 1rem;
+}
+
+#testimonials p {
+  margin: 0;
+}
+
+footer {
+  background-color: #2c2c2c;
+  text-align: center;
+  padding: 7.75rem 7%;
+}
+
+footer h2 {
+  text-transform: none;
+  font-size: 1.6rem;
+  line-height: 1.2;
+  color: #fff;
+  font-weight: 900;
+  letter-spacing: 0.01em;
+  margin-top: 0;
+}
+
+footer .ready {
+  font-weight: 500;
+  font-size: .75rem;
+  line-height: 1.6667;
+  letter-spacing: 0.3em;
+  color: #b4b4b4;
+  max-width: 26.875rem;
+  margin: 1.35rem auto 1.5rem;
+}
+
+footer .trigger-btn {
+  background-color: transparent;
+  color: #c1836d;
+  border: solid 2px #c1836d;
+  outline: none;
+  box-shadow: none;
+  border-radius: 5px;
+  font-size: .6875rem;
+  line-height: 1.6667;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  padding: 0.35rem 2.75rem 0.4rem;
+  margin: 1rem 0 4rem;
+}
+
+@media only screen and (min-width: 38em) {
+  footer .trigger-btn {
+    padding: 0.35rem 4.75rem 0.4rem;
+  }
+}
+
+footer .prefer {
+  text-transform: none;
+  font-size: 1rem;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+  color: #fff;
+  font-weight: 900;
+}
+
+footer .contact-blurb, footer .copyright {
+  font-size: .75rem;
+  letter-spacing: 0.3em;
+  line-height: 1.25;
+  color: #b4b4b4;
+  font-weight: 500;
+}
+
+footer .contact-blurb a, footer .copyright a {
+  color: #c1836d;
+}
+
+footer .sm-link {
+  list-style-type: none;
+  margin-top: 1.5rem;
+}
+
+footer .sm-link li {
+  display: inline-block;
+  margin: 0 0.75rem;
+}
+
+footer .sm-link li a {
+  color: #fff;
+  font-weight: 800;
+  text-transform: none;
+  font-size: .75rem;
+  text-decoration: none;
+}
+
+footer .copyright {
+  font-size: .625rem;
+  margin-top: 3.5rem;
+}
+
+footer .copyright li {
+  display: block;
+}
+
+@media only screen and (min-width: 38em) {
+  footer .copyright li {
+    display: inline-block;
+  }
+}
+
+.facebook-i, .instagram-i {
+  position: relative;
+  display: inline-block;
+  padding-left: 1.5rem;
+}
+
+.facebook-i:after, .instagram-i:after {
+  position: absolute;
+  content: '';
+  height: 1rem;
+  width: 1rem;
+  top: 0;
+  left: 0;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.facebook-i:after {
+  background-image: url(http://www.justaddsalt.ca/tek-av/images/facebook-icon.png);
+}
+
+.instagram-i:after {
+  background-image: url(http://www.justaddsalt.ca/tek-av/images/instagram-icon.png);
+}
+
+.option-section {
+  display: none;
+}
+
+@media only screen and (min-width: 38em) {
+  .option-section {
+    display: block;
+  }
+}
+
+.md-content .contact-blurb {
+  margin-top: 1.5rem;
+  font-size: 0.5rem;
+  color: #c1836d;
+}
+
+.nav-top a {
+  font-size: .85rem;
+}
+
+.nav-contact a {
+  font-size: .6875rem;
+  text-decoration: underline;
+}
+
+.nav-sm li:nth-child(2) a {
+  margin-left: .5rem;
+}
+
+.nav-sm li a {
+  text-transform: capitalize;
+}
+
+.nav-contact-2 {
+  height: 2rem;
+}
+
+footer .sm-link li a {
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+footer .sm-link li a:hover {
+  color: #c1836d;
+}

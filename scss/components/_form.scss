@@ -1,0 +1,118 @@
+form {
+    padding-top: 30px;
+}
+
+button, input {
+  line-height: normal;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+.input {
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	margin-bottom: 15px;
+	width: 100%;
+	vertical-align: middle;
+    height: 35px;
+    overflow: hidden;
+}
+
+.input__field {
+	display: block;
+	border: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+	border-radius: 5px;
+	color: $text;
+	-webkit-appearance: none; /* for box shadows to show on iOS */
+    width: 100%;
+    padding-left: 13px;
+	background-color: transparent;
+	border: 2px solid rgba($lightgrey, .8);
+	-webkit-transition: background-color 0.25s, border-color 0.25s;
+	transition: background-color 0.25s, border-color 0.25s;
+}
+
+.input__field:focus {
+	outline: none;
+}
+
+.input__label {
+	color: $lightgrey;
+	font-weight: 700;
+	font-size: .72rem;
+    letter-spacing: 0.2em;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	text-align: left;
+	pointer-events: none;
+	overflow: hidden;
+	-webkit-transform: translate3d(0, 3em, 0);
+	transform: translate3d(0, 3em, 0);
+	-webkit-transition: -webkit-transform 0.25s;
+	transition: transform 0.25s ;
+	-webkit-transition-timing-function: ease-in-out;
+	transition-timing-function: ease-in-out;
+}
+
+.input__label-content {
+	display: block;
+	width: 100%;
+	color: $lightgrey;
+	padding: 5px 0;
+	-webkit-transition: -webkit-transform 0.25s;
+	transition: transform 0.25s;
+	-webkit-transition-timing-function: ease-in-out;
+	transition-timing-function: ease-in-out;
+    // position: absolute !important;
+    position: relative;
+    top: 4px;
+    left: 15px;
+}
+
+.input__label-content--yoshiko::after {
+	content: attr(data-content);
+	position: absolute;
+	font-weight: 700;
+	bottom: 100%;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	color: $lightgrey;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	font-size: 0.5rem;
+    padding: 7px 0px 0;
+    opacity: .25;
+}
+
+.input__field--yoshiko:focus + .input__label--yoshiko,
+.input--filled .input__label--yoshiko {
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+
+.input__field--yoshiko:focus + .input__label--yoshiko .input__label-content--yoshiko,
+.input--filled .input__label-content--yoshiko {
+	-webkit-transform: translate3d(0, 100%, 0);
+	transform: translate3d(0, 100%, 0);
+}
+
+.input__field--yoshiko:focus + .input__field--yoshiko,
+.input--filled .input__field--yoshiko {
+	background-color: transparent;
+	border-color: $red;
+}

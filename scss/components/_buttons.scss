@@ -1,0 +1,49 @@
+// Buttons and Inputs
+
+.btn {
+    @include button($charcoal, $red, 0px);
+}
+
+.cta-btn {
+    @include button($charcoal, $red, 0);
+}
+
+.cta-btn-sm {
+    margin: 15px 0 0;
+    
+}
+
+.cta-btn-m {
+    margin: 0;
+    display: none;
+    @media #{$media-m} {
+        display: inline-block;
+    }
+    & {
+        padding: 5px 10px;
+        margin-top: 2px;
+    }
+}
+
+footer {
+    position: relative;
+}
+
+.btt {
+    @include button($charcoal, $red, 0);
+    width: 40px;
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    background: $charcoal url(http://justaddsalt.ca/tek-av/images/slider-arrow.png) 50% 50% / 20px no-repeat;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    display: block;
+}
+
+.btt:after {
+    content: 'TOP';
+    position: absolute;
+    color: $charcoal;
+    top: -80px;
+}

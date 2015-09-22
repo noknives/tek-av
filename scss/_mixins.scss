@@ -1,0 +1,186 @@
+// Mixins
+
+@mixin zero{
+    margin: 0;
+    padding: 0;
+}
+
+@mixin ease($transition-property, $transition-time, $method) {
+    -webkit-transition: $transition-property $transition-time $method;
+    -moz-transition: $transition-property $transition-time $method;
+    -ms-transition: $transition-property $transition-time $method;
+    -o-transition: $transition-property $transition-time $method;
+    transition: $transition-property $transition-time $method;
+}
+
+// Hide text in an element
+@mixin hide-text {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block; // inline elements with this won't hide text unless set to block
+}
+
+@mixin show-text{
+    text-indent: 0;
+    white-space: normal;
+    overflow: visible;
+}
+
+@mixin transitionlinear($value) {
+    -webkit-transition: all $value linear;
+    transition: all $value linear;
+}
+
+@mixin button($bg-color, $color, $margin) {
+    font-size: 0.95em;
+    font-weight: 600;
+    z-index: 2;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    
+    color: $color;
+    background-color: $bg-color;
+    
+    position: relative;
+    overflow: hidden;
+    margin: $margin;
+    padding: 10px 14px;
+    
+	cursor: pointer;
+	outline: none;
+    
+    -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+    
+    /*&:after {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        width: 101%;
+        height: 0;
+        top: 50%;
+        left: 50%;
+        background: $color;
+        opacity: 0;
+        
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -ms-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+        
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+    }*/
+    &:hover {
+        color: $white;
+    }
+    &:active {
+        color: $white;
+    }
+    &:hover:after {
+        height: 111%;
+        opacity: 1;
+    }
+
+    &:active:after {
+        height: 110%;
+        opacity: 1;
+    }
+}
+
+@mixin input($color, $margin) {
+    font-size: 0.875em;
+    font-family: $opensans;
+    display: block;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    
+    color: $color;
+    border: solid 2px $color;
+    background-color: transparent;
+    
+    position: relative;
+    overflow: hidden;
+    margin: $margin;
+    padding: 10px;
+    min-width: 9rem;
+    max-width: 17rem;
+    
+	cursor: pointer;
+	outline: none;
+    
+    -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+
+
+@mixin bgcover($url) {
+    background-image: $url;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+@mixin placeholder($color) {
+    ::-webkit-input-placeholder {
+        color: $color;
+        font-size: .875rem;
+    }
+    :-moz-placeholder { /* Firefox 18- */
+        color: $color;  
+        font-size: .875rem;
+    }
+    ::-moz-placeholder {  /* Firefox 19+ */
+        color: $color;  
+        font-size: .875rem;
+    }
+    :-ms-input-placeholder {  
+        color: $color;
+        font-size: .875rem;
+    }
+}
+
+@mixin linkreset($color) {
+    text-decoration: none;
+    color: $color;
+    border-bottom: 1px solid $color;
+}
+
+
+@mixin animation-delay($delay) {
+    -webkit-animation-delay: $delay; 
+    -moz-animation-delay: $delay;
+    -ms-animation-delay: $delay; 
+    -o-animation-delay: $delay;
+    animation-delay: $delay;
+}
+
+@mixin compensate {
+    /*overflow-x: hidden;
+    //-webkit-transform: translate(2.5625rem,0);
+    -moz-transform: translate(2.5625rem,0);
+    -ms-transform: translate(2.5625rem,0);
+    -o-transform: translate(2.5625rem,0);
+            transform: translate(2.5625rem,0);*/
+}
+
+@mixin pretty-list($color) {
+    max-width: 26rem;
+    margin: 3rem auto;
+    list-style-type: none;
+    li {
+        border-bottom: 1px solid $color;
+        color: $color;
+        padding: 1rem 0;
+    }
+    li:first-child {
+        border-top: 1px solid $color;
+    }
+}

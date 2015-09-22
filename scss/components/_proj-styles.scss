@@ -1,0 +1,1050 @@
+// Project-Specific Styles
+
+.line-btn {
+    display: inline-block;
+    border: solid 2px $white;
+    letter-spacing: 0.1em;
+    background-color: transparent;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+    padding: .4rem .65rem .375rem;
+    border-radius: 5px;
+}
+
+.h4-kerned {
+    font-size: 1rem;
+    line-height: 2;
+    color: $lightgrey;
+    letter-spacing: 0.3em;
+    margin-top: 0;
+    font-weight: 700;
+}
+
+header {
+    margin: 0 auto;
+    z-index: 9999;
+    height: 35px;
+    margin-top: 0px;
+    width: 100%;
+    background-color: transparent;
+    padding-top: 4.5rem;
+    @media #{$media-m} {
+        padding-top: 7rem;
+    }
+    @media #{$media-l} {
+        padding-top: 11.25rem;
+    }
+    .max-width {
+        width: 86%;
+        border-bottom: solid 1px #d9d9d9;
+        position: relative;
+        margin: -1px auto 0;
+        max-width: 106rem;
+    }
+    .small-logo {
+        left: 0;
+        bottom: 10px;
+        width: 70px;
+        top: -1.55rem;
+        @media #{$media-m} {
+            top: -1.95rem;
+            bottom: 8px;
+            width: 100px;
+        }
+        @media #{$media-l} {
+            top: -3.85rem;
+            bottom: 41px;
+        }
+    }
+    .nav-contact-2 {
+        bottom: .925rem;
+        right: 40px;
+        font-size: .6875rem;
+        @media #{$media-m} {
+            bottom: 20px;
+            right: 47px;
+        }
+        @media #{$media-l} {
+            right: 0px;
+            bottom: 43px;
+        }
+        li a {
+            color: $lightgrey; 
+            letter-spacing: 0.1em; 
+            font-weight: 700;
+            -webkit-transition: all 300ms ease-in-out;
+            -moz-transition: all 300ms ease-in-out;
+            -o-transition: all 300ms ease-in-out;
+            -ms-transition: all 300ms ease-in-out;
+            transition: all 300ms ease-in-out;
+            &:hover {
+                color: $red;
+            }
+        }
+        li {
+            display: inline-block;
+            margin-left: 5px;
+            @media #{$media-l} {
+                margin-left: 34px;
+            }
+        }
+    }
+    .nav-btn,
+    .nav-btn:link,
+    .nav-btn:visited {
+        bottom: .75rem;
+        right: 0;
+        height: 30px;
+        width: 30px;
+        border: solid 2px $red;
+        border-radius: 5px;
+        background: transparent url('http://www.justaddsalt.ca/tek-av/images/nav.png') no-repeat center center;
+        background-size: 13px; 
+        -webkit-transition: all 300ms ease-in-out;
+        -moz-transition: all 300ms ease-in-out;
+        -o-transition: all 300ms ease-in-out;
+        -ms-transition: all 300ms ease-in-out;
+        transition: all 300ms ease-in-out;
+        text-indent: 9999px;
+        @media #{$media-m} {
+            bottom: 17px;
+        }
+    }
+    .cta-btn-m, 
+    .cta-btn-m:link,
+    .cta-btn-m:visited,
+    .cta-btn-sm, 
+    .cta-btn-sm:link,
+    .cta-btn-sm:visited {
+        font-size: .6875rem;
+        border-color: $red;
+    }
+    .cta-btn-m:active, 
+    .cta-btn-m:hover {
+        color: $lightgrey;
+    }
+    .cta-btn-sm, 
+    .cta-btn-sm:link,
+    .cta-btn-sm:visited {
+        font-size: .6875rem;
+        color: $red;
+    }
+}
+
+.nav a, 
+.nav a:link,
+.nav a:visited{
+    letter-spacing: 0.06em;
+    font-weight: 700;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+    &:hover {
+        color: $red;
+    }
+}
+
+.scroll-header {
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+    background-color: white;
+    padding-top: 3.5rem;
+    @media #{$media-m} {
+        padding-top: 4rem;
+    }
+    @media #{$media-l} {
+        padding-top: 6.5rem;
+    }
+    .max-width {
+        border-bottom: none;
+    }
+}
+
+#intro {
+    z-index: 9;
+    background-color: transparent; 
+    padding: 7%;
+    padding-top: calc(6.25rem + 5%);
+    position: relative;
+    @media #{$media-m} {
+        padding: calc(50px + 7.25rem) 7% 5%;
+    }
+    @media #{$media-l} {
+        padding: calc(50px + 12rem) 7% 15rem;
+        background-image: url(http://www.justaddsalt.ca/tek-av/images/intrp-box.jpg);
+        background-size: 1000px;
+        background-repeat: no-repeat;
+        background-position: bottom right;
+    }
+    @media only screen and (min-width: 120em) {
+        background-position: 75% -29.5rem;
+        background-size: 1500px;
+    }
+    h1 {
+        letter-spacing: 0.01em;
+        line-height: 1.333333333;
+        font-size: 1.75em;
+        @media #{$media-s} {
+            font-size: 2.25em;
+        }
+        @media #{$media-m} {
+            font-size: 3.375em;
+        }
+        .tek-av {
+            display: none;
+            @media #{$media-m} {
+                display: inline-block;
+            }
+        }
+        .tagline {
+            letter-spacing: 0.275em;
+            color: $lightgrey;
+        }
+        .done-right {
+            letter-spacing: 0.275em;
+            color: $red;
+        }
+    }
+}
+
+#about-intro aside.media {
+    background-image: url(http://www.placehold.it/700x700/c1c1c1);
+    background-size: cover;
+}
+
+.max-width {
+    max-width: 106rem;
+    margin: 0 auto;
+}
+
+#about-us {
+    z-index: 2;
+    padding: 7.75rem 7%;
+    position: relative;
+    background-color: $charcoal;
+    color: $white;
+    @media #{$media-l} {
+        margin-top: -10.31rem;
+        padding: calc(7.75rem + 2rem) 7%;
+        overflow: auto;
+    }
+    h2 {
+        text-transform: none;
+        line-height: 1;
+        color: $white;
+        font-size: 2.25rem;
+        padding-top: 30px;
+        display: inline-block;
+        letter-spacing: 0.0025em;
+        margin-top: -6px;
+        @media #{$media-l} {
+            position: absolute;
+            top: 0;
+            left: calc(-14% - 3.2rem);
+        }
+        @media only screen and (min-width: 93.75em) {
+            left: calc(-8% - 3.2rem);
+        }
+    }
+    .floater {
+        position: relative;
+        padding: 1rem;
+        @media #{$media-l} {
+            display: block;
+            width: 86%;
+            margin: 0 auto;
+            margin-left: 14%;
+            overflow: visible;
+            padding-right: 4rem;
+        }
+        @media only screen and (min-width: 93.75em) {
+            width: 92%;
+            margin-left: 8%;
+        }
+    }
+    .p-holder {
+        @media #{$media-l} {
+            position: relative;
+            border-top: 1px solid $red;
+            display: block;
+            padding: 2rem 0 5rem 20%;
+        }
+        @media only screen and (min-width: 93.75em) {
+            max-width: 75rem;
+            padding: 2rem 0 5rem 30%;
+        }
+    }
+    p {
+        padding-bottom: 2rem;
+    }
+    .local-service, .dream-setup, .crafted {
+        padding-top: calc(7% + 20px);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    .local-service {
+        background-image: url(http://www.justaddsalt.ca/tek-av/images/local-service-1.jpg);
+        margin-top: 30px;
+        h2 {
+            border-top: 6px solid $red;
+        }
+        p {
+            border-bottom: 1px solid $red;
+        }
+        .p-holder {
+            border-top: 1px solid $red;
+        }
+    }
+    .dream-setup {
+        margin-top: 60px;
+        background-image: url(http://www.justaddsalt.ca/tek-av/images/dream-setup.jpg);
+        h2 {
+            border-top: 6px solid $yellow;
+        }
+        p {
+            border-bottom: 1px solid $yellow;
+        }
+        .p-holder {
+            border-top: 1px solid $yellow;
+        }
+    }
+    .crafted {
+        margin-top: 60px;
+        background-image: url(http://www.justaddsalt.ca/tek-av/images/crafted.jpg);
+        h2 {
+            border-top: 6px solid $blue;
+        }
+        p {
+            border-bottom: 1px solid $blue;
+        }
+        .p-holder {
+            border-top: 1px solid $blue;
+        }
+    }
+    p {
+        letter-spacing: 0.3em;
+        font-weight: 500;
+        line-height: 2;
+        font-size: .75rem;
+        color: $lightgrey;
+    }
+}
+
+#i-1, #i-2, #i-3 {
+    background-color: $lightgrey;
+}
+
+.slide-0 {
+    background-image: url(http://www.justaddsalt.ca/tek-av/images/placeholder1.jpg);
+}
+
+.slide-1 {
+  background-image: url('http://placehold.it/1400x1400/333333/ffffff');
+}
+
+.slide-2 {
+  background-image: url('http://placehold.it/1400x1400/555555/ffffff');
+}
+
+#services {
+    text-align: center;
+    padding: 7.75rem 0 0;
+    background-color: $white;
+    h1 {
+        font-weight: 700;
+        color: $lightgrey;
+        font-size: 1rem;
+        letter-spacing: 0.3em;
+        margin-top: 0;
+        line-height: 1;
+        padding-left: 7%;
+        padding-right: 7%;
+        margin-bottom: 3.875rem;
+    }
+    .flipper {
+        position: relative;
+        text-align: left;
+        .front {
+            background-position: top;
+            background-repeat: no-repeat;
+            position: relative;
+            padding: 1.5rem;
+            padding-bottom: 1rem;
+            h2 {
+                color: $white;
+                line-height: .1;
+                color: $white;
+                letter-spacing: 0.025em;
+            }
+            .number, .slogan {
+                color: $white;
+                font-weight: 700;
+            }
+            .slogan {
+                letter-spacing: 0.2em;
+                margin-bottom: 2rem;
+            }
+            .small-p {
+                margin-bottom: 2.65rem;
+            }
+        }
+        .back {
+            padding: 1.5rem;
+            ul {
+                overflow: hidden;
+            }
+            .custom-quote-btn {
+                display: block;
+                width: 100%;
+                text-align: center;
+                border-radius: 5px;
+                border: solid 2px $white;
+                text-decoration: none;
+                font-size: .6875rem;
+                letter-spacing: 0.3em;
+                color: $white;
+                font-weight: 700;
+                padding: .35rem 0;
+                max-width: 22rem;
+                margin: -8px auto 0;
+                background-color: transparent;
+                text-transform: uppercase;
+                &:hover {
+                    color: $text;
+                }
+            }
+            .sell-item {
+                list-style-type: none;
+                border-top: 1px solid rgba(78, 78, 78, .25);
+                margin: 0;
+                padding: 0;
+                margin-top: 1.5rem;
+                @media only screen and (min-width: 40em) {
+                    width: 31.5%;
+                    margin: 1.5rem 5px 0;
+                    float: left;
+                    border-bottom: 1px solid rgba(78, 78, 78, .25);
+                }
+                @media only screen and (min-width: 70em) {
+                    width: 100%;
+                    border-bottom: none;
+                }
+                &:last-child {
+                    border-bottom: 1px solid rgba(78, 78, 78, .25);
+                    margin-bottom: 1.5rem;
+                }
+                h3 {
+                    font-weight: 900; 
+                    font-size: 2.25rem;
+                    letter-spacing: 0.02em;
+                    display: inline-block;
+                    padding-top: .9rem;
+                    color: $white;
+                    margin: 0;
+                    margin-top: -4px;
+                    border-top: 4px solid $text;
+                }
+                div {
+                    font-size: 1rem;
+                    letter-spacing: 0.2em;
+                    line-height: 1;
+                    margin: 0;
+                    color: $white;
+                    font-weight: 700;
+                    .font_small {
+                        color: $text;
+                        font-weight: 500;
+                        margin-top: 1.0385rem;
+                        margin-bottom: 1.75rem;
+                    }
+                }
+            }
+        }
+        .flip-btn {
+            display: block;
+            width: 100%;
+            border-top: 1px solid rgba(78, 78, 78, .25);
+            padding: 0;
+            position: relative;
+            &:after {
+                content: '';
+                position: absolute;
+                background-image: url(http://www.justaddsalt.ca/tek-av/images/arrow.png);
+                background-position: center center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                top: 0;
+                right: 0;
+                top: 1.3rem;
+                height: 14px;
+                width: 16px;
+                text-align: right;
+                color: white;
+            }
+            a {
+                display: inline-block;
+                border-top: solid 4px $text;
+                font-size: .75rem;
+                font-weight: 900;
+                color: $white;
+                margin-top: -4px;
+                padding: 1.3rem 0 0;
+            }
+        }
+        .flip-btn, .see-less {
+            display: block;
+            width: auto;
+            position: absolute;
+            bottom: 1.25rem;
+            left: 1.5rem;
+            right: 1.5rem;
+        }
+        .see-less {
+            &:after {
+                -webkit-transform: rotateY(180deg);
+            }
+        }
+        #front-1 {
+            background-color: $red;
+            background-image: url(http://www.justaddsalt.ca/tek-av/images/audio-box.jpg);
+            background-size: 456px;
+            background-position: right 1.75rem;
+            @media #{$media-s} {
+                background-size: 656px;
+                background-position: right 1.75rem;
+            }
+            @media only screen and (min-width: 40em) {
+                background-image: url(http://www.justaddsalt.ca/tek-av/images/audio-box-ng.jpg);
+                background-size: 256px;
+                background-position: right 1.75rem;
+            }
+            @media only screen and (min-width: 70em) {
+                background-image: url(http://www.justaddsalt.ca/tek-av/images/audio-box.jpg);
+                background-size: 656px;
+                background-position: right 1.75rem;
+            }
+        }
+        #front-2 {
+            background-color: $yellow;
+            background-image: url(http://www.justaddsalt.ca/tek-av/images/video-box.jpg);
+            background-size: 456px;
+            background-position: right 1.75rem;
+            @media #{$media-s} {
+                background-size: 656px;
+                background-position: right 1.75rem;
+            }
+            @media only screen and (min-width: 40em) {
+                background-image: url(http://www.justaddsalt.ca/tek-av/images/video-box-ng.jpg);
+                background-size: 256px;
+                background-position: right 1.75rem;
+            }
+            @media only screen and (min-width: 70em) {
+                background-image: url(http://www.justaddsalt.ca/tek-av/images/video-box.jpg);
+                background-size: 656px;
+                background-position: right 1.75rem;
+            }
+        }
+        #front-3 {
+            background-color: $blue;
+            background-image: url(http://www.justaddsalt.ca/tek-av/images/network-box.jpg);
+            background-size: 456px;
+            background-position: right 1.75rem;
+            @media #{$media-s} {
+                background-size: 656px;
+                background-position: right 2.75rem;
+            }
+            @media only screen and (min-width: 40em) {
+                background-image: url(http://www.justaddsalt.ca/tek-av/images/network-box-ng.jpg);
+                background-size: 250px;
+                background-position: right 1.75rem;
+            }
+            @media only screen and (min-width: 70em) {
+                background-image: url(http://www.justaddsalt.ca/tek-av/images/network-box.jpg);
+                background-size: 656px;
+                background-position: right 1.75rem;
+            }
+        }
+        #back-1 {
+            background-color: $red;
+        }
+        #back-2 {
+            background-color: $yellow;
+        }
+        #back-3 {
+            background-color: $blue;
+        }
+    }
+    .you-name-it {
+        width: 86%;
+        margin: 3.5rem auto 0;
+        padding-bottom: 2.25rem;
+        color: $lightgrey;
+        letter-spacing: 0.3em;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 2;
+        border-top: 1px solid $lightgrey;
+        border-bottom: 1px solid $lightgrey;
+        .black {
+            display: inline-block;
+            color: $text;
+            border-top: 3px solid $text;
+            margin-top: -3px;
+            padding-top: calc(2rem + 4px);
+        }
+        .we-can {
+            max-width: 28.625rem;
+            margin: 0 auto;
+        }
+        p {
+            margin: 0;
+        }
+    }
+    .mini-cards {
+        width: 96%;
+        @media only screen and (min-width: 35em) {
+            width: 86%;
+        }
+        padding-top: 3rem;
+        text-align: center;
+        margin-bottom: 7.25rem;
+        h5 {
+            font-size: .5rem;
+            @media #{$media-s} { 
+                font-size: .75rem;
+            }
+            font-weight: 700;
+            line-height: 1.333333333;
+            color: $text;
+            letter-spacing: 0.3em;
+        }
+    }
+    .possibilities {
+        background-image: url(http://www.justaddsalt.ca/tek-av/images/endless-possibilities.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        padding: 7.75rem 0;
+        width: 100%;
+        overflow: auto;
+        .split {
+            width: 90%;
+            max-width: 56.375rem;
+            margin: 0 auto;
+            display: block;
+            border-top: 1px solid rgba( $red, .5);
+            @media #{$media-l} {
+                text-align: left;
+            }
+            .left {
+                @media #{$media-l} {
+                    width: 35%;
+                    display: inline-block;
+                    float: left;
+                }
+                h2 {
+                    text-transform: none;
+                    font-size: 2.25rem;
+                    line-height: 1;
+                    letter-spacing: 0.01em;
+                    border-top: 6px solid $red;
+                    display: inline-block;
+                    padding-top: 1.75rem;
+                    color: white;
+                    margin-top: -6px;
+                    @media #{$media-l} {
+                        text-align: left;
+                    }
+                }
+            }
+            ul {
+                border-bottom: 1px solid rgba( $red, .5);
+                width: 90%;
+                margin: 0 auto;
+                overflow: hidden;
+                @media #{$media-l} {
+                    width: 65%;
+                    display: inline-block;
+                    float: left;
+                    padding-left: .95rem;
+                }
+                li {
+                    font-size: .75rem;
+                    line-height: 1.333;
+                    margin-top: 1.333rem;
+                    color: $lightgrey;
+                    font-weight: 500;
+                    letter-spacing: 0.3em;
+                    list-style-type: none;
+                    &:first-child {
+                        margin-top: 1.95rem;
+                    }
+                    &:last-child {
+                        margin-bottom: 1.8rem;
+                    }
+                    @media #{$media-l} {
+                        list-style-type: square;
+                        text-align: left; 
+                        padding-left: .25rem;
+                    }
+                } //li
+            } // ul 
+        } // Split
+    } //possibilities
+    .logos {
+        background-color: $charcoal;
+        background-image: url(http://www.justaddsalt.ca/tek-av/images/tekav-pattern.png);
+        background-size: 30px;
+        padding: 7.25rem 0;
+        ul {
+            width: 95%;
+            max-width: 56.375rem;
+            margin: 3rem auto 0;
+            li {
+                display: inline-block;
+                margin: 15px 13px;
+                @media #{$media-m} {
+                    margin: 20px 26px;
+                }
+                img {
+                    height: 13px;
+                    @media #{$media-m} {
+                        height: 21px;
+                    }
+                }
+            }
+        }
+    }
+} // services
+
+#our-work {
+    text-align: center;
+    padding: 7.75rem 7%;
+    h1 {
+        margin-top: 0;
+        margin-bottom: 2.75rem; 
+    }
+    .caption {
+        font-size: .75rem;
+        line-height: 1.333333333;
+        font-weight: 700;
+        text-transform: none;
+        .cap-title {
+            text-transform: uppercase;
+        }
+    }
+    .content {
+        background-color: $charcoal;
+        color: $lightgrey;
+        text-transform: none;
+        text-align: left;
+        .numbering {
+            position: absolute;
+            top: 2rem;
+            font-size: .625rem;
+            letter-spacing: 0.1em;
+            font-weight: 700;
+        }
+        &:after {
+            content: '';
+            background-size: contain;
+            background-color: transparent;
+            background-image: url(http://www.justaddsalt.ca/tek-av/images/tek-av-icon-red.png);
+            height: 25px;
+            width: 27px;
+            background-repeat: no-repeat;
+            position: absolute;
+            bottom: 2rem;
+            right: 2rem;
+        }
+        h3, h4 {
+            font-weight: 900;
+            color: $white;
+        }
+        div {
+            border-top: solid 1px rgba($red, .5);
+            border-bottom: solid 1px rgba($red, .5);
+            padding: 0;
+            padding-bottom: 1.5rem;
+        }
+        h3 {
+            display: inline-block;
+            margin: 0;
+            margin-top: -4px;
+            margin-bottom: .9rem;
+            border-top: solid 4px $red;
+            padding-top: 1rem;
+        }
+        h4 {
+            font-size: 1rem;
+        }
+        p, li, a {
+            font-size: .875rem;
+            line-height: 1.4;
+            letter-spacing: 0.04em;
+            font-weight: 500;
+        }
+        ul {
+            list-style-type: square;
+        }
+    }
+    .project-yellow .content div, .project-yellow .content h3, {
+        border-color: $yellow;
+    }
+    .project-blue .content div, .project-blue .content h3 {
+        border-color: $blue;
+    }
+    .project-yellow .content:after{
+        background-image: url(http://www.justaddsalt.ca/tek-av/images/tek-av-icon-yellow.png);
+    }
+    .project-blue .content:after{
+        background-image: url(http://www.justaddsalt.ca/tek-av/images/tek-av-icon-blue.png);
+    }
+}
+
+section.flip-layout aside.content {
+    .numbering {
+        top: 2rem;
+        right: 2rem;
+    }
+}
+
+#testimonials {
+    background-color: $grey;
+    padding: 7.75rem 7%;
+    color: $text;
+    h4 {
+        color: $lightgrey;
+        letter-spacing: 0.3em;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 2;
+        .black {
+            color: $text;
+            font-weight: 900;
+        }
+    }
+    .testimonial-text {
+        font-weight: 500;
+        font-size: 1.5rem;
+        line-height: 1.5;
+        //margin: 2rem auto -1px;
+        margin: 2rem auto 3rem;
+        padding: 2rem 0;
+        z-index: 1;
+        text-transform: none;
+        max-width: 56.25rem;
+        border-top: solid 1px rgba($lightgrey, .5);
+        border-bottom: solid 1px rgba($lightgrey, .5);
+        position: relative;
+        &:after {
+            content: '';
+            background-color: $grey;
+            background-image: url(http://www.justaddsalt.ca/tek-av/images/tek-av-icon-before.png);
+            background-size: contain;
+            background-position: center center;
+            background-repeat: no-repeat;
+            height: 25px;
+            width: 32px;
+            position: absolute;
+            top: -12px;
+            z-index: 8;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+        }
+    }
+    .author {
+        letter-spacing: 0.3em;
+        line-height: 2;
+        font-size: .75rem;
+        .name {
+            display: inline-block;
+            position: relative;
+            z-index: 2;
+            border-top: solid 4px $text;
+            margin-top: 0;
+            padding-top: 1.75rem;
+        }
+        .company {
+            color: $lightgrey;
+            font-weight: 500;
+            padding-bottom: 1rem;
+        }
+    }
+    p {
+        margin: 0;
+    }
+}
+
+footer {
+    background-color: $charcoal;
+    text-align: center;
+    padding: 7.75rem 7%;
+    h2 {
+        text-transform: none;
+        font-size: 1.6rem;
+        line-height: 1.2;
+        color: $white;
+        font-weight: 900;
+        letter-spacing: 0.01em;
+        margin-top: 0;
+    }
+    .ready {
+        font-weight: 500;
+        font-size: .75rem;
+        line-height: 1.6667;
+        letter-spacing: 0.3em;
+        color: $lightgrey;
+        max-width: 26.875rem;
+        margin: 1.35rem auto 1.5rem;
+    }
+    .trigger-btn {
+        background-color: transparent;
+        color: $red;
+        border: solid 2px $red;
+        outline: none;
+        box-shadow: none;
+        border-radius: 5px;
+        font-size: .6875rem;
+        line-height: 1.6667;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.3em;
+        padding: .35rem 2.75rem .4rem;
+        @media #{$media-m} {
+            padding: .35rem 4.75rem .4rem;
+        }
+        margin: 1rem 0 4rem;
+    }
+    .prefer {
+        text-transform: none;
+        font-size: 1rem;
+        line-height: 1.25;
+        letter-spacing: 0.01em;
+        color: $white;
+        font-weight: 900;
+    }
+    .contact-blurb, .copyright {
+        font-size:  .75rem;
+        letter-spacing: 0.3em;
+        line-height: 1.25;
+        color: $lightgrey;
+        font-weight: 500;
+        a {
+            color: $red;
+        }
+    }
+    .sm-link {
+        list-style-type: none;
+        margin-top: 1.5rem;
+        li {
+            display: inline-block;
+            margin: 0 .75rem;
+            a {
+                color: $white;
+                font-weight: 800;
+                text-transform: none;
+                font-size: .75rem;
+                text-decoration: none;
+            }
+        }
+    }
+    .copyright {
+        font-size: .625rem;
+        margin-top: 3.5rem;
+        li {
+            display: block;
+            @media #{$media-m} {
+                display: inline-block;
+                &:first-child {
+                    //border-right: solid 1px $lightgrey;
+                    //padding-right: .5rem;
+                }
+            }
+        }
+    }
+}
+
+.facebook-i, .instagram-i {
+    position: relative;
+    display: inline-block;
+    padding-left: 1.5rem;
+    &:after {
+        position: absolute;
+        content: '';
+        height: 1rem;
+        width: 1rem;
+        top: 0;
+        left: 0;
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
+.facebook-i:after {
+    background-image: url(http://www.justaddsalt.ca/tek-av/images/facebook-icon.png);
+}
+
+.instagram-i:after {
+    background-image: url(http://www.justaddsalt.ca/tek-av/images/instagram-icon.png);
+}
+
+.option-section {
+    display: none;
+    @media only screen and (min-width: 38em) {
+        display: block;
+    }
+}
+
+.md-content .contact-blurb {
+    margin-top: 1.5rem;
+    font-size: 0.5rem;
+    color: $red;
+}
+
+.nav-top a {
+    font-size: .85rem;
+}
+
+.nav-contact a {
+    font-size: .6875rem;
+    text-decoration: underline;
+}
+
+.nav-sm {
+    li {
+        &:nth-child(2) a {
+            margin-left: .5rem;
+        }
+        a {
+            text-transform: capitalize;
+        }
+    }
+}
+
+.nav-contact-2 {
+    height: 2rem;
+}
+
+footer .sm-link li a {
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+
+footer .sm-link li a:hover {
+    color: $red;
+}
