@@ -230,6 +230,9 @@ header {
     padding: 7.75rem 7%;
     position: relative;
     background-color: $charcoal;
+    background-image: url(http://www.justaddsalt.ca/tek-av/images/gradient-pattern.jpg);
+    background-repeat: repeat-x;
+    background-position: bottom center;
     color: $white;
     @media #{$media-l} {
         margin-top: -12.37rem;
