@@ -178,9 +178,9 @@ header {
         padding: calc(50px + 7.25rem) 7% 5%;
     }
     @media #{$media-l} {
-        padding: calc(50px + 12rem) 7% 15rem;
+        padding: calc(50px + 17rem) 7% 28rem;
         background-image: url(http://www.justaddsalt.ca/tek-av/images/intrp-box.jpg);
-        background-size: 1000px;
+        background-size: 1203px;
         background-repeat: no-repeat;
         background-position: bottom right;
     }
@@ -232,7 +232,7 @@ header {
     background-color: $charcoal;
     color: $white;
     @media #{$media-l} {
-        margin-top: -10.31rem;
+        margin-top: -12.37rem;
         padding: calc(7.75rem + 2rem) 7%;
         overflow: auto;
     }
